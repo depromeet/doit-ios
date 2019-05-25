@@ -13,6 +13,10 @@
 		DADBABED22992A1A00FD6A5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DADBABEB22992A1A00FD6A5A /* Main.storyboard */; };
 		DADBABEF22992A1A00FD6A5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DADBABEE22992A1A00FD6A5A /* Assets.xcassets */; };
 		DADBABF222992A1A00FD6A5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DADBABF022992A1A00FD6A5A /* LaunchScreen.storyboard */; };
+		DADBABFD22992B3600FD6A5A /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADBABFB22992B3600FD6A5A /* SplashViewController.swift */; };
+		DADBABFE22992B3600FD6A5A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADBABFC22992B3600FD6A5A /* LoginViewController.swift */; };
+		DADBAC0322992BC500FD6A5A /* KakaoCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADBAC0122992BC500FD6A5A /* KakaoCommon.framework */; };
+		DADBAC0422992BC500FD6A5A /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADBAC0222992BC500FD6A5A /* KakaoOpenSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,11 @@
 		DADBABEE22992A1A00FD6A5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DADBABF122992A1A00FD6A5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DADBABF322992A1A00FD6A5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DADBABFB22992B3600FD6A5A /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		DADBABFC22992B3600FD6A5A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DADBAC0122992BC500FD6A5A /* KakaoCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoCommon.framework; sourceTree = "<group>"; };
+		DADBAC0222992BC500FD6A5A /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
+		DADBAC0522992CDE00FD6A5A /* KakaoOpenSDK-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KakaoOpenSDK-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +43,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6071EED8B62B6F65B0BFE3A3 /* Pods_doit.framework in Frameworks */,
+				DADBAC0322992BC500FD6A5A /* KakaoCommon.framework in Frameworks */,
+				DADBAC0422992BC500FD6A5A /* KakaoOpenSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +63,8 @@
 		AADB155B6DDD6A1272A0FE81 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DADBAC0122992BC500FD6A5A /* KakaoCommon.framework */,
+				DADBAC0222992BC500FD6A5A /* KakaoOpenSDK.framework */,
 				47433DDA09EDEC4C10833BD4 /* Pods_doit.framework */,
 			);
 			name = Frameworks;
@@ -78,14 +91,33 @@
 		DADBABE622992A1A00FD6A5A /* doit */ = {
 			isa = PBXGroup;
 			children = (
+				DADBABFA22992B1600FD6A5A /* data */,
+				DADBABF922992B0F00FD6A5A /* presentation */,
 				DADBABE722992A1A00FD6A5A /* AppDelegate.swift */,
 				DADBABE922992A1A00FD6A5A /* ViewController.swift */,
 				DADBABEB22992A1A00FD6A5A /* Main.storyboard */,
 				DADBABEE22992A1A00FD6A5A /* Assets.xcassets */,
 				DADBABF022992A1A00FD6A5A /* LaunchScreen.storyboard */,
 				DADBABF322992A1A00FD6A5A /* Info.plist */,
+				DADBAC0522992CDE00FD6A5A /* KakaoOpenSDK-Bridging-Header.h */,
 			);
 			path = doit;
+			sourceTree = "<group>";
+		};
+		DADBABF922992B0F00FD6A5A /* presentation */ = {
+			isa = PBXGroup;
+			children = (
+				DADBABFC22992B3600FD6A5A /* LoginViewController.swift */,
+				DADBABFB22992B3600FD6A5A /* SplashViewController.swift */,
+			);
+			path = presentation;
+			sourceTree = "<group>";
+		};
+		DADBABFA22992B1600FD6A5A /* data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +252,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DADBABFE22992B3600FD6A5A /* LoginViewController.swift in Sources */,
+				DADBABFD22992B3600FD6A5A /* SplashViewController.swift in Sources */,
 				DADBABEA22992A1A00FD6A5A /* ViewController.swift in Sources */,
 				DADBABE822992A1A00FD6A5A /* AppDelegate.swift in Sources */,
 			);
@@ -370,13 +404,58 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8KLUK5NY37;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = doit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"FIRAnalyticsConnector\"",
+					"-framework",
+					"\"FirebaseAnalytics\"",
+					"-framework",
+					"\"FirebaseCore\"",
+					"-framework",
+					"\"FirebaseCoreDiagnostics\"",
+					"-framework",
+					"\"FirebaseInstanceID\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"GoogleAppMeasurement\"",
+					"-framework",
+					"\"GoogleUtilities\"",
+					"-framework",
+					"\"RxCocoa\"",
+					"-framework",
+					"\"RxRelay\"",
+					"-framework",
+					"\"RxSwift\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SnapKit\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"nanopb\"",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.depromeet.doit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "doit/KakaoOpenSDK-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -389,13 +468,58 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8KLUK5NY37;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = doit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"FIRAnalyticsConnector\"",
+					"-framework",
+					"\"FirebaseAnalytics\"",
+					"-framework",
+					"\"FirebaseCore\"",
+					"-framework",
+					"\"FirebaseCoreDiagnostics\"",
+					"-framework",
+					"\"FirebaseInstanceID\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"GoogleAppMeasurement\"",
+					"-framework",
+					"\"GoogleUtilities\"",
+					"-framework",
+					"\"RxCocoa\"",
+					"-framework",
+					"\"RxRelay\"",
+					"-framework",
+					"\"RxSwift\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SnapKit\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"nanopb\"",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.depromeet.doit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "doit/KakaoOpenSDK-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
