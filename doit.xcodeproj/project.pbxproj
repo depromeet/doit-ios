@@ -9,14 +9,14 @@
 /* Begin PBXBuildFile section */
 		6071EED8B62B6F65B0BFE3A3 /* Pods_doit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47433DDA09EDEC4C10833BD4 /* Pods_doit.framework */; };
 		DADBABE822992A1A00FD6A5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADBABE722992A1A00FD6A5A /* AppDelegate.swift */; };
-		DADBABEA22992A1A00FD6A5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADBABE922992A1A00FD6A5A /* ViewController.swift */; };
-		DADBABED22992A1A00FD6A5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DADBABEB22992A1A00FD6A5A /* Main.storyboard */; };
 		DADBABEF22992A1A00FD6A5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DADBABEE22992A1A00FD6A5A /* Assets.xcassets */; };
 		DADBABF222992A1A00FD6A5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DADBABF022992A1A00FD6A5A /* LaunchScreen.storyboard */; };
 		DADBABFD22992B3600FD6A5A /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADBABFB22992B3600FD6A5A /* SplashViewController.swift */; };
 		DADBABFE22992B3600FD6A5A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADBABFC22992B3600FD6A5A /* LoginViewController.swift */; };
 		DADBAC0322992BC500FD6A5A /* KakaoCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADBAC0122992BC500FD6A5A /* KakaoCommon.framework */; };
 		DADBAC0422992BC500FD6A5A /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADBAC0222992BC500FD6A5A /* KakaoOpenSDK.framework */; };
+		DADBAC072299310E00FD6A5A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DADBAC062299310E00FD6A5A /* GoogleService-Info.plist */; };
+		DADBAC09229933A100FD6A5A /* MainViewControlller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADBAC08229933A100FD6A5A /* MainViewControlller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,8 +25,6 @@
 		906B48CFB9F90F305776D360 /* Pods-doit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doit.release.xcconfig"; path = "Pods/Target Support Files/Pods-doit/Pods-doit.release.xcconfig"; sourceTree = "<group>"; };
 		DADBABE422992A1A00FD6A5A /* doit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = doit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DADBABE722992A1A00FD6A5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DADBABE922992A1A00FD6A5A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DADBABEC22992A1A00FD6A5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DADBABEE22992A1A00FD6A5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DADBABF122992A1A00FD6A5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DADBABF322992A1A00FD6A5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -35,6 +33,8 @@
 		DADBAC0122992BC500FD6A5A /* KakaoCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoCommon.framework; sourceTree = "<group>"; };
 		DADBAC0222992BC500FD6A5A /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
 		DADBAC0522992CDE00FD6A5A /* KakaoOpenSDK-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KakaoOpenSDK-Bridging-Header.h"; sourceTree = "<group>"; };
+		DADBAC062299310E00FD6A5A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DADBAC08229933A100FD6A5A /* MainViewControlller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewControlller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,12 +94,11 @@
 				DADBABFA22992B1600FD6A5A /* data */,
 				DADBABF922992B0F00FD6A5A /* presentation */,
 				DADBABE722992A1A00FD6A5A /* AppDelegate.swift */,
-				DADBABE922992A1A00FD6A5A /* ViewController.swift */,
-				DADBABEB22992A1A00FD6A5A /* Main.storyboard */,
 				DADBABEE22992A1A00FD6A5A /* Assets.xcassets */,
 				DADBABF022992A1A00FD6A5A /* LaunchScreen.storyboard */,
 				DADBABF322992A1A00FD6A5A /* Info.plist */,
 				DADBAC0522992CDE00FD6A5A /* KakaoOpenSDK-Bridging-Header.h */,
+				DADBAC062299310E00FD6A5A /* GoogleService-Info.plist */,
 			);
 			path = doit;
 			sourceTree = "<group>";
@@ -108,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				DADBABFC22992B3600FD6A5A /* LoginViewController.swift */,
+				DADBAC08229933A100FD6A5A /* MainViewControlller.swift */,
 				DADBABFB22992B3600FD6A5A /* SplashViewController.swift */,
 			);
 			path = presentation;
@@ -182,7 +182,7 @@
 			files = (
 				DADBABF222992A1A00FD6A5A /* LaunchScreen.storyboard in Resources */,
 				DADBABEF22992A1A00FD6A5A /* Assets.xcassets in Resources */,
-				DADBABED22992A1A00FD6A5A /* Main.storyboard in Resources */,
+				DADBAC072299310E00FD6A5A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,9 +252,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DADBAC09229933A100FD6A5A /* MainViewControlller.swift in Sources */,
 				DADBABFE22992B3600FD6A5A /* LoginViewController.swift in Sources */,
 				DADBABFD22992B3600FD6A5A /* SplashViewController.swift in Sources */,
-				DADBABEA22992A1A00FD6A5A /* ViewController.swift in Sources */,
 				DADBABE822992A1A00FD6A5A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,14 +262,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DADBABEB22992A1A00FD6A5A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DADBABEC22992A1A00FD6A5A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DADBABF022992A1A00FD6A5A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -409,6 +401,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = doit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,6 +466,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = doit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

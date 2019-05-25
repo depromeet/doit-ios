@@ -66,6 +66,9 @@ class LoginViewController: UIViewController {
                     }
                     print("Kakaotalk login complete")
                     print("Access token 🔑 : \(session.accessToken)")
+                    
+                    let viewController = MainViewController()
+                    self.navigationController?.pushViewController(viewController, animated: true)
                 })
         }.disposed(by: disposeBag)
     }
