@@ -45,6 +45,7 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (6.1.0):
     - GoogleUtilities/Logger
+  - Kingfisher (5.5.0)
   - nanopb (0.3.901):
     - nanopb/decode (= 0.3.901)
     - nanopb/encode (= 0.3.901)
@@ -61,6 +62,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 5.0.0-beta.5)
   - Firebase/Core
+  - Kingfisher
   - RxCocoa
   - RxSwift
   - SnapKit (~> 5.0.0)
@@ -74,6 +76,7 @@ SPEC REPOS:
     - FirebaseInstanceID
     - GoogleAppMeasurement
     - GoogleUtilities
+    - Kingfisher
     - nanopb
     - RxCocoa
     - RxRelay
@@ -88,12 +91,13 @@ SPEC CHECKSUMS:
   FirebaseInstanceID: 27bed93a59b6685f5c3e0c028a878a764fd75c33
   GoogleAppMeasurement: 51d8d9ea48f0ca44484d29cfbdef976fbd4fc336
   GoogleUtilities: 84df567c76ca84f67b7bb40e769fdd4acc746a10
+  Kingfisher: 6fe5e67a90fd335e49b0f5c075ff55ac5ebedd94
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
   RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
   RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
   SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
 
-PODFILE CHECKSUM: 9ba8651851e5537f17d3fa8a4da05b2712c86ada
+PODFILE CHECKSUM: 872c9851ba15241947d5c99b048b12202a1c6aa5
 
 COCOAPODS: 1.5.3

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		6071EED8B62B6F65B0BFE3A3 /* Pods_doit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47433DDA09EDEC4C10833BD4 /* Pods_doit.framework */; };
+		DA40A5EA22A269A2006431A4 /* ImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA40A5E922A269A2006431A4 /* ImagePickerViewController.swift */; };
+		DA40A5EC22A26D5A006431A4 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA40A5EB22A26D5A006431A4 /* TimerViewController.swift */; };
+		DA40A5EE22A27390006431A4 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA40A5ED22A27390006431A4 /* Date.swift */; };
 		DADBABE822992A1A00FD6A5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADBABE722992A1A00FD6A5A /* AppDelegate.swift */; };
 		DADBABEF22992A1A00FD6A5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DADBABEE22992A1A00FD6A5A /* Assets.xcassets */; };
 		DADBABF222992A1A00FD6A5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DADBABF022992A1A00FD6A5A /* LaunchScreen.storyboard */; };
@@ -31,6 +34,9 @@
 		321E332FC45F75F1461D8BBF /* Pods-doit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-doit/Pods-doit.debug.xcconfig"; sourceTree = "<group>"; };
 		47433DDA09EDEC4C10833BD4 /* Pods_doit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_doit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		906B48CFB9F90F305776D360 /* Pods-doit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doit.release.xcconfig"; path = "Pods/Target Support Files/Pods-doit/Pods-doit.release.xcconfig"; sourceTree = "<group>"; };
+		DA40A5E922A269A2006431A4 /* ImagePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerViewController.swift; sourceTree = "<group>"; };
+		DA40A5EB22A26D5A006431A4 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		DA40A5ED22A27390006431A4 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		DADBABE422992A1A00FD6A5A /* doit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = doit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DADBABE722992A1A00FD6A5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DADBABEE22992A1A00FD6A5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -86,6 +92,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DA40A5E822A26661006431A4 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
 		DADBABDB22992A1A00FD6A5A = {
 			isa = PBXGroup;
 			children = (
@@ -123,9 +136,12 @@
 		DADBABF922992B0F00FD6A5A /* presentation */ = {
 			isa = PBXGroup;
 			children = (
+				DA40A5E822A26661006431A4 /* CustomView */,
 				DADBABFC22992B3600FD6A5A /* LoginViewController.swift */,
 				DADBAC08229933A100FD6A5A /* MainViewControlller.swift */,
 				DADBABFB22992B3600FD6A5A /* SplashViewController.swift */,
+				DA40A5E922A269A2006431A4 /* ImagePickerViewController.swift */,
+				DA40A5EB22A26D5A006431A4 /* TimerViewController.swift */,
 			);
 			path = presentation;
 			sourceTree = "<group>";
@@ -172,6 +188,7 @@
 				DADBAC152299378200FD6A5A /* UITableViewCell.swift */,
 				DADBAC162299378200FD6A5A /* String.swift */,
 				DADBAC172299378200FD6A5A /* UIImageView.swift */,
+				DA40A5ED22A27390006431A4 /* Date.swift */,
 			);
 			name = extensions;
 			path = doit/extensions;
@@ -257,6 +274,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-doit/Pods-doit-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
@@ -269,6 +287,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
@@ -310,14 +329,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				DADBAC09229933A100FD6A5A /* MainViewControlller.swift in Sources */,
+				DA40A5EE22A27390006431A4 /* Date.swift in Sources */,
 				DADBAC1C2299378200FD6A5A /* String.swift in Sources */,
 				DADBAC0E229936CF00FD6A5A /* SettingsProvider.swift in Sources */,
 				DADBAC0D229936CF00FD6A5A /* FontProvider.swift in Sources */,
 				DADBAC1D2299378200FD6A5A /* UIImageView.swift in Sources */,
 				DADBABFE22992B3600FD6A5A /* LoginViewController.swift in Sources */,
 				DADBAC1A2299378200FD6A5A /* UIColor.swift in Sources */,
+				DA40A5EA22A269A2006431A4 /* ImagePickerViewController.swift in Sources */,
 				DADBAC1B2299378200FD6A5A /* UITableViewCell.swift in Sources */,
 				DADBAC182299378200FD6A5A /* CALayer.swift in Sources */,
+				DA40A5EC22A26D5A006431A4 /* TimerViewController.swift in Sources */,
 				DADBAC192299378200FD6A5A /* Array.swift in Sources */,
 				DADBABFD22992B3600FD6A5A /* SplashViewController.swift in Sources */,
 				DADBABE822992A1A00FD6A5A /* AppDelegate.swift in Sources */,
