@@ -67,7 +67,9 @@ class LoginViewController: UIViewController {
                     print("Kakaotalk login complete")
                     print("Access token 🔑 : \(session.accessToken)")
                     
-                    let viewController = MainViewController()
+                    SettingsProvider.shared.isUserLoggedIn = true
+                    
+                    let viewController = CustomTabBarController()
                     self.navigationController?.pushViewController(viewController, animated: true)
                 })
         }.disposed(by: disposeBag)
