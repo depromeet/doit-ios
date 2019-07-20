@@ -58,6 +58,10 @@ class CustomTabBarController: UIViewController {
                 self.addChild(selectedViewController)
                 self.innerView.addSubview(selectedViewController.view)
                 selectedViewController.didMove(toParent: self)
+                
+                selectedViewController.view.snp.makeConstraints { make in
+                    make.edges.equalToSuperview()
+                }
             }
             .disposed(by: disposeBag)
         

@@ -43,4 +43,12 @@ extension UIFont {
     class var logoutButton: UIFont {
         return UIFont.systemFont(ofSize: 14, weight: .regular)
     }
+    
+    class var settingsHeader: UIFont {
+        return UIFont.systemFont(ofSize: 14, weight: .bold)
+    }
+    
+    class var settingsCell: UIFont {
+        return UIFont.systemFont(ofSize: 16, weight: .regular)
+    }
 }
