@@ -47,10 +47,6 @@ extension UIColor {
         return UIColor(white: 1.0, alpha: 1.0)
     }
     
-    @nonobjc class var dodgerBlue: UIColor {
-        return UIColor(red: 77.0 / 255.0, green: 144.0 / 255.0, blue: 251.0 / 255.0, alpha: 1.0)
-    }
-    
     @nonobjc class var burple: UIColor {
         return UIColor(red: 119.0 / 255.0, green: 29.0 / 255.0, blue: 228.0 / 255.0, alpha: 1.0)
     }
@@ -61,6 +57,30 @@ extension UIColor {
     
     @nonobjc class var darkGrey: UIColor {
         return UIColor(red: 40.0 / 255.0, green: 41.0 / 255.0, blue: 42.0 / 255.0, alpha: 1.0)
+    }
+    
+    @nonobjc class var mediumGreen: UIColor {
+        return UIColor(red: 46.0 / 255.0, green: 177.0 / 255.0, blue: 68.0 / 255.0, alpha: 1.0)
+    }
+    
+    @nonobjc class var kiwiGreen: UIColor {
+        return UIColor(red: 138.0 / 255.0, green: 221.0 / 255.0, blue: 75.0 / 255.0, alpha: 1.0)
+    }
+    
+    @nonobjc class var offWhite: UIColor {
+        return UIColor(red: 1.0, green: 1.0, blue: 240.0 / 255.0, alpha: 1.0)
+    }
+    
+    @nonobjc class var dodgerBlue: UIColor {
+        return UIColor(red: 77.0 / 255.0, green: 144.0 / 255.0, blue: 251.0 / 255.0, alpha: 1.0)
+    }
+    
+    @nonobjc class var blackThree: UIColor {
+        return UIColor(white: 43.0 / 255.0, alpha: 1.0)
+    }
+    
+    @nonobjc class var brownishGrey: UIColor {
+        return UIColor(white: 119.0 / 255.0, alpha: 1.0)
     }
     
 }

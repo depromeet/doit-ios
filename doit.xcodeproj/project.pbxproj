@@ -8,9 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		6071EED8B62B6F65B0BFE3A3 /* Pods_doit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47433DDA09EDEC4C10833BD4 /* Pods_doit.framework */; };
+		DA3C93DB22E2ECE400711267 /* ProfileMetaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3C93DA22E2ECE400711267 /* ProfileMetaView.swift */; };
 		DA40A5EA22A269A2006431A4 /* ImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA40A5E922A269A2006431A4 /* ImagePickerViewController.swift */; };
 		DA40A5EC22A26D5A006431A4 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA40A5EB22A26D5A006431A4 /* TimerViewController.swift */; };
 		DA40A5EE22A27390006431A4 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA40A5ED22A27390006431A4 /* Date.swift */; };
+		DA649B0822D9AE8700F9F371 /* GoalsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA649B0722D9AE8700F9F371 /* GoalsViewModel.swift */; };
+		DA649B0A22D9BF2500F9F371 /* CircularProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA649B0922D9BF2500F9F371 /* CircularProgressBar.swift */; };
 		DAD7A83C22C8D53F00FCA0E5 /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD7A83B22C8D53F00FCA0E5 /* NavigationBarView.swift */; };
 		DAD7A83F22C8D56B00FCA0E5 /* NavigationBarHighlightButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD7A83E22C8D56B00FCA0E5 /* NavigationBarHighlightButton.swift */; };
 		DAD7A84122C8D5C300FCA0E5 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD7A84022C8D5C300FCA0E5 /* CustomTabBarController.swift */; };
@@ -47,9 +50,12 @@
 		321E332FC45F75F1461D8BBF /* Pods-doit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-doit/Pods-doit.debug.xcconfig"; sourceTree = "<group>"; };
 		47433DDA09EDEC4C10833BD4 /* Pods_doit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_doit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		906B48CFB9F90F305776D360 /* Pods-doit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doit.release.xcconfig"; path = "Pods/Target Support Files/Pods-doit/Pods-doit.release.xcconfig"; sourceTree = "<group>"; };
+		DA3C93DA22E2ECE400711267 /* ProfileMetaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMetaView.swift; sourceTree = "<group>"; };
 		DA40A5E922A269A2006431A4 /* ImagePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerViewController.swift; sourceTree = "<group>"; };
 		DA40A5EB22A26D5A006431A4 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		DA40A5ED22A27390006431A4 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		DA649B0722D9AE8700F9F371 /* GoalsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsViewModel.swift; sourceTree = "<group>"; };
+		DA649B0922D9BF2500F9F371 /* CircularProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressBar.swift; sourceTree = "<group>"; };
 		DAD7A83B22C8D53F00FCA0E5 /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
 		DAD7A83E22C8D56B00FCA0E5 /* NavigationBarHighlightButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarHighlightButton.swift; sourceTree = "<group>"; };
 		DAD7A84022C8D5C300FCA0E5 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
@@ -122,6 +128,8 @@
 			isa = PBXGroup;
 			children = (
 				DAD7A83D22C8D54400FCA0E5 /* navigation */,
+				DA649B0922D9BF2500F9F371 /* CircularProgressBar.swift */,
+				DA3C93DA22E2ECE400711267 /* ProfileMetaView.swift */,
 			);
 			path = customviews;
 			sourceTree = "<group>";
@@ -249,6 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				DADBAC08229933A100FD6A5A /* GoalsViewController.swift */,
+				DA649B0722D9AE8700F9F371 /* GoalsViewModel.swift */,
 				DAF0483922D0867C000CBC4B /* GoalViewCell.swift */,
 				DAF0483D22D086F6000CBC4B /* PagingCollectionViewFlowLayout.swift */,
 				DAF0484322D09558000CBC4B /* AddGoalViewController.swift */,
@@ -422,6 +431,7 @@
 				DAD7A83C22C8D53F00FCA0E5 /* NavigationBarView.swift in Sources */,
 				DADBAC1C2299378200FD6A5A /* String.swift in Sources */,
 				DAD7A84922C8E2AA00FCA0E5 /* NavigationBarButton.swift in Sources */,
+				DA3C93DB22E2ECE400711267 /* ProfileMetaView.swift in Sources */,
 				DAF0484122D08DCC000CBC4B /* Goal.swift in Sources */,
 				DADBAC0E229936CF00FD6A5A /* SettingsProvider.swift in Sources */,
 				DADBAC0D229936CF00FD6A5A /* FontProvider.swift in Sources */,
@@ -435,6 +445,7 @@
 				DAF0483222D07C67000CBC4B /* UIButton.swift in Sources */,
 				DAF0483A22D0867C000CBC4B /* GoalViewCell.swift in Sources */,
 				DADBAC1B2299378200FD6A5A /* UITableViewCell.swift in Sources */,
+				DA649B0822D9AE8700F9F371 /* GoalsViewModel.swift in Sources */,
 				DADBAC182299378200FD6A5A /* CALayer.swift in Sources */,
 				DAF0484422D09558000CBC4B /* AddGoalViewController.swift in Sources */,
 				DA40A5EC22A26D5A006431A4 /* TimerViewController.swift in Sources */,
@@ -443,6 +454,7 @@
 				DADBABFD22992B3600FD6A5A /* SplashViewController.swift in Sources */,
 				DADBABE822992A1A00FD6A5A /* AppDelegate.swift in Sources */,
 				DAD7A84722C8E21800FCA0E5 /* NavigationOption.swift in Sources */,
+				DA649B0A22D9BF2500F9F371 /* CircularProgressBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

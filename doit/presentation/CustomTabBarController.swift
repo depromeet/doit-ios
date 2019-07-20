@@ -19,18 +19,22 @@ class CustomTabBarController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        view.backgroundColor = .black
         view.addSubview(innerView)
         view.addSubview(navigationBar)
         
         innerView.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
+            make.top.equalToSuperview()
+            make.left.equalToSuperview()
+            make.right.equalToSuperview()
+            make.bottom.equalTo(navigationBar.snp.top)
         }
         
         navigationBar.snp.makeConstraints { make in
-            make.height.equalTo(116)
+            make.height.equalTo(82)
             make.left.equalToSuperview()
             make.right.equalToSuperview()
-            make.bottom.equalToSuperview()
+            make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom)
         }
         
         let initialViewController = viewControllers.first!
@@ -48,7 +52,6 @@ class CustomTabBarController: UIViewController {
     private func bindToSubViews() {
         navigationBar
             .selectedIndex
-            .debug()
             .bind { [weak self] index in
                 guard let self = self else { return }
                 let selectedViewController = self.viewControllers.item(at: index)!
@@ -60,7 +63,6 @@ class CustomTabBarController: UIViewController {
         
         navigationBar
             .isHighlightButtonSelected
-            .debug()
             .bind { [weak self] in
                 let modalViewController = AddShootViewController()
                 self?.present(modalViewController, animated: true, completion: nil)

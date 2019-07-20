@@ -12,11 +12,35 @@ extension UIFont {
         return UIFont.systemFont(ofSize: 30.0, weight: .bold)
     }
     
+    class var title2: UIFont {
+        return UIFont.systemFont(ofSize: 16.0, weight: .light)
+    }
+    
     class var goalCardTitle: UIFont {
         return UIFont.systemFont(ofSize: 24.0, weight: .bold)
     }
     
     class var goalCardDescription: UIFont {
+        return UIFont.systemFont(ofSize: 14, weight: .regular)
+    }
+    
+    class var goalCardProgressLabel: UIFont {
+        return UIFont.systemFont(ofSize: 12, weight: .regular)
+    }
+    
+    class var goalCardProgressPercentage: UIFont {
+        return UIFont.systemFont(ofSize: 34, weight: .bold)
+    }
+    
+    class var goalCardCategory: UIFont {
+        return UIFont.systemFont(ofSize: 10, weight: .regular)
+    }
+    
+    class var profileName: UIFont {
+        return UIFont.systemFont(ofSize: 14, weight: .bold)
+    }
+    
+    class var logoutButton: UIFont {
         return UIFont.systemFont(ofSize: 14, weight: .regular)
     }
 }
