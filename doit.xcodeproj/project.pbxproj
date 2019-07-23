@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		6071EED8B62B6F65B0BFE3A3 /* Pods_doit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47433DDA09EDEC4C10833BD4 /* Pods_doit.framework */; };
+		DA26386A22E737AA00237F31 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA26386922E737AA00237F31 /* Constants.swift */; };
+		DA26386C22E7390F00237F31 /* CategoryPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA26386B22E7390F00237F31 /* CategoryPickerView.swift */; };
+		DA26386E22E73CB500237F31 /* CategoryTagsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA26386D22E73CB500237F31 /* CategoryTagsView.swift */; };
+		DA26387022E73DBD00237F31 /* CategoryTagButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA26386F22E73DBD00237F31 /* CategoryTagButton.swift */; };
+		DA26387422E744A200237F31 /* TitlePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA26387322E744A200237F31 /* TitlePickerView.swift */; };
+		DA26387622E7462600237F31 /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA26387522E7462600237F31 /* DatePickerView.swift */; };
+		DA26387822E7466400237F31 /* VerificationPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA26387722E7466400237F31 /* VerificationPickerView.swift */; };
+		DA26387A22E7510700237F31 /* TimerEnabledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA26387922E7510700237F31 /* TimerEnabledButton.swift */; };
+		DA26387C22E755F000237F31 /* ProceedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA26387B22E755F000237F31 /* ProceedButton.swift */; };
+		DA26388022E7590300237F31 /* AddGoalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA26387F22E7590300237F31 /* AddGoalViewModel.swift */; };
 		DA3C93DB22E2ECE400711267 /* ProfileMetaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3C93DA22E2ECE400711267 /* ProfileMetaView.swift */; };
 		DA3C93DF22E3069C00711267 /* AlertSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3C93DE22E3069C00711267 /* AlertSettingsView.swift */; };
 		DA3C93E122E3073400711267 /* SettingsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3C93E022E3073400711267 /* SettingsHeaderView.swift */; };
@@ -17,6 +27,8 @@
 		DA3C93EA22E30BD400711267 /* GoalSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3C93E922E30BD400711267 /* GoalSettingsView.swift */; };
 		DA3C93EC22E30C8500711267 /* FeedbackSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3C93EB22E30C8500711267 /* FeedbackSettingsView.swift */; };
 		DA3C93EE22E30C8D00711267 /* AppSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3C93ED22E30C8D00711267 /* AppSettingsView.swift */; };
+		DA3C93F022E3156B00711267 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3C93EF22E3156B00711267 /* Category.swift */; };
+		DA3C93F322E3178900711267 /* LinearProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3C93F222E3178900711267 /* LinearProgressBar.swift */; };
 		DA40A5EA22A269A2006431A4 /* ImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA40A5E922A269A2006431A4 /* ImagePickerViewController.swift */; };
 		DA40A5EC22A26D5A006431A4 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA40A5EB22A26D5A006431A4 /* TimerViewController.swift */; };
 		DA40A5EE22A27390006431A4 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA40A5ED22A27390006431A4 /* Date.swift */; };
@@ -58,6 +70,16 @@
 		321E332FC45F75F1461D8BBF /* Pods-doit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-doit/Pods-doit.debug.xcconfig"; sourceTree = "<group>"; };
 		47433DDA09EDEC4C10833BD4 /* Pods_doit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_doit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		906B48CFB9F90F305776D360 /* Pods-doit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doit.release.xcconfig"; path = "Pods/Target Support Files/Pods-doit/Pods-doit.release.xcconfig"; sourceTree = "<group>"; };
+		DA26386922E737AA00237F31 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DA26386B22E7390F00237F31 /* CategoryPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPickerView.swift; sourceTree = "<group>"; };
+		DA26386D22E73CB500237F31 /* CategoryTagsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTagsView.swift; sourceTree = "<group>"; };
+		DA26386F22E73DBD00237F31 /* CategoryTagButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTagButton.swift; sourceTree = "<group>"; };
+		DA26387322E744A200237F31 /* TitlePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlePickerView.swift; sourceTree = "<group>"; };
+		DA26387522E7462600237F31 /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
+		DA26387722E7466400237F31 /* VerificationPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationPickerView.swift; sourceTree = "<group>"; };
+		DA26387922E7510700237F31 /* TimerEnabledButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerEnabledButton.swift; sourceTree = "<group>"; };
+		DA26387B22E755F000237F31 /* ProceedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProceedButton.swift; sourceTree = "<group>"; };
+		DA26387F22E7590300237F31 /* AddGoalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalViewModel.swift; sourceTree = "<group>"; };
 		DA3C93DA22E2ECE400711267 /* ProfileMetaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMetaView.swift; sourceTree = "<group>"; };
 		DA3C93DE22E3069C00711267 /* AlertSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertSettingsView.swift; sourceTree = "<group>"; };
 		DA3C93E022E3073400711267 /* SettingsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsHeaderView.swift; sourceTree = "<group>"; };
@@ -67,6 +89,8 @@
 		DA3C93E922E30BD400711267 /* GoalSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalSettingsView.swift; sourceTree = "<group>"; };
 		DA3C93EB22E30C8500711267 /* FeedbackSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackSettingsView.swift; sourceTree = "<group>"; };
 		DA3C93ED22E30C8D00711267 /* AppSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsView.swift; sourceTree = "<group>"; };
+		DA3C93EF22E3156B00711267 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		DA3C93F222E3178900711267 /* LinearProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearProgressBar.swift; sourceTree = "<group>"; };
 		DA40A5E922A269A2006431A4 /* ImagePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerViewController.swift; sourceTree = "<group>"; };
 		DA40A5EB22A26D5A006431A4 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		DA40A5ED22A27390006431A4 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
@@ -155,13 +179,31 @@
 			path = settings;
 			sourceTree = "<group>";
 		};
+		DA3C93F122E3170600711267 /* addgoal */ = {
+			isa = PBXGroup;
+			children = (
+				DAF0484322D09558000CBC4B /* AddGoalViewController.swift */,
+				DA26387F22E7590300237F31 /* AddGoalViewModel.swift */,
+			);
+			path = addgoal;
+			sourceTree = "<group>";
+		};
 		DA40A5E822A26661006431A4 /* customviews */ = {
 			isa = PBXGroup;
 			children = (
 				DA3C93E822E308CB00711267 /* settings */,
 				DAD7A83D22C8D54400FCA0E5 /* navigation */,
 				DA649B0922D9BF2500F9F371 /* CircularProgressBar.swift */,
+				DA3C93F222E3178900711267 /* LinearProgressBar.swift */,
 				DA3C93DA22E2ECE400711267 /* ProfileMetaView.swift */,
+				DA26386B22E7390F00237F31 /* CategoryPickerView.swift */,
+				DA26386D22E73CB500237F31 /* CategoryTagsView.swift */,
+				DA26386F22E73DBD00237F31 /* CategoryTagButton.swift */,
+				DA26387322E744A200237F31 /* TitlePickerView.swift */,
+				DA26387522E7462600237F31 /* DatePickerView.swift */,
+				DA26387722E7466400237F31 /* VerificationPickerView.swift */,
+				DA26387922E7510700237F31 /* TimerEnabledButton.swift */,
+				DA26387B22E755F000237F31 /* ProceedButton.swift */,
 			);
 			path = customviews;
 			sourceTree = "<group>";
@@ -214,6 +256,7 @@
 		DADBABF922992B0F00FD6A5A /* presentation */ = {
 			isa = PBXGroup;
 			children = (
+				DA3C93F122E3170600711267 /* addgoal */,
 				DAF0483822D07E78000CBC4B /* auth */,
 				DAF0483522D07E41000CBC4B /* shoots */,
 				DAF0483422D07D5C000CBC4B /* goals */,
@@ -242,6 +285,7 @@
 			children = (
 				DADBAC0B229936CF00FD6A5A /* FontProvider.swift */,
 				DADBAC0C229936CF00FD6A5A /* SettingsProvider.swift */,
+				DA26386922E737AA00237F31 /* Constants.swift */,
 			);
 			path = configuration;
 			sourceTree = "<group>";
@@ -292,7 +336,6 @@
 				DA649B0722D9AE8700F9F371 /* GoalsViewModel.swift */,
 				DAF0483922D0867C000CBC4B /* GoalViewCell.swift */,
 				DAF0483D22D086F6000CBC4B /* PagingCollectionViewFlowLayout.swift */,
-				DAF0484322D09558000CBC4B /* AddGoalViewController.swift */,
 			);
 			path = goals;
 			sourceTree = "<group>";
@@ -318,6 +361,7 @@
 			isa = PBXGroup;
 			children = (
 				DAF0484022D08DCC000CBC4B /* Goal.swift */,
+				DA3C93EF22E3156B00711267 /* Category.swift */,
 			);
 			path = entity;
 			sourceTree = "<group>";
@@ -458,8 +502,10 @@
 			files = (
 				DAF0483E22D086F6000CBC4B /* PagingCollectionViewFlowLayout.swift in Sources */,
 				DAD7A83F22C8D56B00FCA0E5 /* NavigationBarHighlightButton.swift in Sources */,
+				DA26387022E73DBD00237F31 /* CategoryTagButton.swift in Sources */,
 				DADBAC09229933A100FD6A5A /* GoalsViewController.swift in Sources */,
 				DA3C93E122E3073400711267 /* SettingsHeaderView.swift in Sources */,
+				DA26388022E7590300237F31 /* AddGoalViewModel.swift in Sources */,
 				DA40A5EE22A27390006431A4 /* Date.swift in Sources */,
 				DAD7A83C22C8D53F00FCA0E5 /* NavigationBarView.swift in Sources */,
 				DADBAC1C2299378200FD6A5A /* String.swift in Sources */,
@@ -467,6 +513,7 @@
 				DA3C93DB22E2ECE400711267 /* ProfileMetaView.swift in Sources */,
 				DAF0484122D08DCC000CBC4B /* Goal.swift in Sources */,
 				DADBAC0E229936CF00FD6A5A /* SettingsProvider.swift in Sources */,
+				DA26386A22E737AA00237F31 /* Constants.swift in Sources */,
 				DADBAC0D229936CF00FD6A5A /* FontProvider.swift in Sources */,
 				DADBAC1D2299378200FD6A5A /* UIImageView.swift in Sources */,
 				DAD7A84522C8D7F900FCA0E5 /* UIFont.swift in Sources */,
@@ -478,15 +525,23 @@
 				DADBABFE22992B3600FD6A5A /* LoginViewController.swift in Sources */,
 				DADBAC1A2299378200FD6A5A /* UIColor.swift in Sources */,
 				DA3C93E522E308B700711267 /* SwitchableSettingsViewCell.swift in Sources */,
+				DA3C93F322E3178900711267 /* LinearProgressBar.swift in Sources */,
+				DA26387422E744A200237F31 /* TitlePickerView.swift in Sources */,
 				DA40A5EA22A269A2006431A4 /* ImagePickerViewController.swift in Sources */,
 				DAF0483222D07C67000CBC4B /* UIButton.swift in Sources */,
 				DAF0483A22D0867C000CBC4B /* GoalViewCell.swift in Sources */,
+				DA26387622E7462600237F31 /* DatePickerView.swift in Sources */,
 				DADBAC1B2299378200FD6A5A /* UITableViewCell.swift in Sources */,
 				DA649B0822D9AE8700F9F371 /* GoalsViewModel.swift in Sources */,
 				DA3C93DF22E3069C00711267 /* AlertSettingsView.swift in Sources */,
 				DADBAC182299378200FD6A5A /* CALayer.swift in Sources */,
+				DA26386E22E73CB500237F31 /* CategoryTagsView.swift in Sources */,
+				DA26387822E7466400237F31 /* VerificationPickerView.swift in Sources */,
 				DAF0484422D09558000CBC4B /* AddGoalViewController.swift in Sources */,
 				DA40A5EC22A26D5A006431A4 /* TimerViewController.swift in Sources */,
+				DA26387A22E7510700237F31 /* TimerEnabledButton.swift in Sources */,
+				DA3C93F022E3156B00711267 /* Category.swift in Sources */,
+				DA26387C22E755F000237F31 /* ProceedButton.swift in Sources */,
 				DA3C93EC22E30C8500711267 /* FeedbackSettingsView.swift in Sources */,
 				DADBAC192299378200FD6A5A /* Array.swift in Sources */,
 				DAF0483722D07E4C000CBC4B /* AddShootViewController.swift in Sources */,
@@ -495,6 +550,7 @@
 				DAD7A84722C8E21800FCA0E5 /* NavigationOption.swift in Sources */,
 				DA649B0A22D9BF2500F9F371 /* CircularProgressBar.swift in Sources */,
 				DA3C93EA22E30BD400711267 /* GoalSettingsView.swift in Sources */,
+				DA26386C22E7390F00237F31 /* CategoryPickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

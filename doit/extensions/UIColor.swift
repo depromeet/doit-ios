@@ -87,4 +87,7 @@ extension UIColor {
         return UIColor(white: 221.0 / 255.0, alpha: 1.0)
     }
     
+    @nonobjc class var veryLightPinkTwo: UIColor {
+        return UIColor(white: 196.0 / 255.0, alpha: 1.0)
+    }
 }

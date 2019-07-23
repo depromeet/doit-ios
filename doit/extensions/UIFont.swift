@@ -51,4 +51,20 @@ extension UIFont {
     class var settingsCell: UIFont {
         return UIFont.systemFont(ofSize: 16, weight: .regular)
     }
+    
+    class var categoryTag: UIFont {
+        return UIFont.systemFont(ofSize: 14, weight: .regular)
+    }
+    
+    class var informationTitle: UIFont {
+        return UIFont.systemFont(ofSize: 12, weight: .bold)
+    }
+    
+    class var informationDescription: UIFont {
+        return UIFont.systemFont(ofSize: 10, weight: .regular)
+    }
+    
+    class var proceedButton: UIFont {
+        return UIFont.systemFont(ofSize: 16, weight: .bold)
+    }
 }
