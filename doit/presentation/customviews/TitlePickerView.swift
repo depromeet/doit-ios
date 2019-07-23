@@ -12,6 +12,10 @@ class TitlePickerView: UIView {
     private lazy var titleTextField = UITextField()
     private lazy var backgroundView = UIView()
     
+    public var title: UITextField {
+        return titleTextField
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         

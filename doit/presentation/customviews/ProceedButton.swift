@@ -12,6 +12,7 @@ class ProceedButton: UIView {
     // MARK: - UI elements
     private lazy var innerButton = UIButton()
     private lazy var label = UILabel()
+    private lazy var gradientLayer = CAGradientLayer()
     
     private var _isEnabled: Bool = false
     public var isEnabled: Bool {
@@ -23,17 +24,16 @@ class ProceedButton: UIView {
             
             if _isEnabled {
                 // Gradient backgroud
-                let gradientLayer = CAGradientLayer()
                 gradientLayer.colors = [UIColor.burple.cgColor, UIColor.dodgerBlue.cgColor]
                 gradientLayer.startPoint = CGPoint(x: 0, y: 0.5)
                 gradientLayer.endPoint = CGPoint(x: 1, y: 0.5)
                 gradientLayer.locations = [0, 1]
                 gradientLayer.frame = bounds
-                layer.addSublayer(gradientLayer)
-                layer.roundCorners(radius: 4)
                 
+                layer.insertSublayer(gradientLayer, at: 0)
                 label.textColor = .white
             } else {
+                gradientLayer.removeFromSuperlayer()
                 label.textColor = .black
             }
         }

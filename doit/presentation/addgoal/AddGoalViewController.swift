@@ -160,7 +160,21 @@ class AddGoalViewController: UIViewController {
     }
     
     private func bindToSubViews() {
-        
+        Observable.combineLatest(
+                selectedCategory,
+                titlePicker.title.rx.text,
+                datePicker.start.rx.text,
+                datePicker.end.rx.text
+            )
+            .bind { [weak self] category, title, start, end in
+                let canProceed = category != nil &&
+                                 (title?.isNotEmpty ?? false) &&
+                                 (start?.isNotEmpty ?? false) &&
+                                 (end?.isNotEmpty ?? false)
+                
+                self?.proceedButton.isEnabled = canProceed
+            }
+            .disposed(by: disposeBag)
     }
 }
 

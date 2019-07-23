@@ -16,6 +16,14 @@ class DatePickerView: UIView {
     private lazy var backgroundView = UIView()
     private lazy var divider = UIView()
     
+    public var start: UITextField {
+        return startDate
+    }
+    
+    public var end: UITextField {
+        return endDate
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
