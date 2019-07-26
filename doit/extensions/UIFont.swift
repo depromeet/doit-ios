@@ -67,4 +67,26 @@ extension UIFont {
     class var proceedButton: UIFont {
         return UIFont.systemFont(ofSize: 16, weight: .bold)
     }
+    
+    class var pickerButton: UIFont {
+        return UIFont.systemFont(ofSize: 14, weight: .regular)
+    }
+    
+    class var dialogTitle: UIFont {
+        return UIFont.systemFont(ofSize: 30, weight: .bold)
+    }
+    
+    class var dialogButton: UIFont {
+        return UIFont.systemFont(ofSize: 14, weight: .bold)
+    }
+    
+    class var plainText: UIFont {
+        return UIFont.systemFont(ofSize: 14, weight: .regular)
+    }
+    
+    class var loginButton: UIFont {
+        return UIFont.systemFont(ofSize: 15, weight: .bold)
+    }
+    
+    
 }

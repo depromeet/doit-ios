@@ -12,6 +12,7 @@ class TimerEnabledButton: UIView {
     private lazy var logoImageView = UIImageView()
     private lazy var label = UILabel()
     private lazy var innerButton = UIButton()
+    private lazy var gradientLayer = CAGradientLayer()
     
     private var _isEnabled: Bool = false
     public var isEnabled: Bool {
@@ -23,18 +24,20 @@ class TimerEnabledButton: UIView {
             
             if _isEnabled {
                 // Gradient backgroud
-                let gradientLayer = CAGradientLayer()
                 gradientLayer.colors = [UIColor.burple.cgColor, UIColor.dodgerBlue.cgColor]
                 gradientLayer.startPoint = CGPoint(x: 0, y: 0.5)
                 gradientLayer.endPoint = CGPoint(x: 1, y: 0.5)
                 gradientLayer.locations = [0, 1]
                 gradientLayer.frame = bounds
-                layer.addSublayer(gradientLayer)
+                layer.insertSublayer(gradientLayer, at: 0)
                 layer.roundCorners(radius: 4)
                 
                 label.textColor = .white
+                logoImageView.tintColor = .white
             } else {
+                gradientLayer.removeFromSuperlayer()
                 label.textColor = UIColor.white.withAlphaComponent(0.5)
+                logoImageView.tintColor = UIColor.white.withAlphaComponent(0.4)
             }
         }
     }
@@ -50,6 +53,7 @@ class TimerEnabledButton: UIView {
         addSubview(label)
         addSubview(innerButton)
         
+        logoImageView.image = UIImage(named: "timerEnabledIcon")
         label.font = .categoryTag
         label.text = "타이머 사용"
         label.textColor = UIColor.white.withAlphaComponent(0.5)

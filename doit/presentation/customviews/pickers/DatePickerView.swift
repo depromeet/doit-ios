@@ -59,7 +59,7 @@ class DatePickerView: UIView {
                                          style: .done,
                                          target: self,
                                          action: #selector(datePickingDone))
-        toolBar.backgroundColor = .blackThree
+        toolBar.barStyle = .blackTranslucent
         toolBar.setItems([space, doneButton], animated: false)
         toolBar.isUserInteractionEnabled = true
         toolBar.sizeToFit()

@@ -1,5 +1,5 @@
 //
-//  AddGoalViewController.swift
+//  AddGoalFirstStepViewController.swift
 //  doit
 //
 //  Copyright © 2019 Depromeet. All rights reserved.
@@ -9,7 +9,7 @@ import UIKit
 import RxCocoa
 import RxSwift
 
-class AddGoalViewController: UIViewController {
+class AddGoalFirstStepViewController: UIViewController {
     
     // MARK: - UI elements
     private lazy var navigationBar = UINavigationBar(frame: CGRect.zero)
@@ -63,6 +63,7 @@ class AddGoalViewController: UIViewController {
             make.right.equalTo(view)
         }
         
+        // TODO
 //        progressBar.snp.makeConstraints { make in
 //            make.height.equalTo(3)
 //            make.top.equalTo(navigationBar.snp.bottom)
@@ -175,11 +176,27 @@ class AddGoalViewController: UIViewController {
                 self?.proceedButton.isEnabled = canProceed
             }
             .disposed(by: disposeBag)
+        
+        verificationPicker.button.rx.tap
+            .bind { [weak self] in
+                self?.verificationPicker.isEnabled.toggle()
+            }
+            .disposed(by: disposeBag)
+        
+        proceedButton.button.rx.tap
+            .bind { [weak self] in
+                if let button = self?.proceedButton, button.isEnabled {
+                    let viewController = AddGoalSecondStepViewController()
+                    self?.navigationController?.pushViewController(viewController, animated: true)
+                }
+            }
+            .disposed(by: disposeBag)
+        
     }
 }
 
 // MARK: - UINavigationBarDelegate
-extension AddGoalViewController: UINavigationBarDelegate {
+extension AddGoalFirstStepViewController: UINavigationBarDelegate {
     public func position(for bar: UIBarPositioning) -> UIBarPosition {
         return .topAttached
     }

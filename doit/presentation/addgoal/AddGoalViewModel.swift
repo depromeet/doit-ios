@@ -10,4 +10,7 @@ import RxCocoa
 
 class AddGoalViewModel {
     
+    func makeGoal() {
+        
+    }
 }

@@ -18,6 +18,15 @@
 		DA26387A22E7510700237F31 /* TimerEnabledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA26387922E7510700237F31 /* TimerEnabledButton.swift */; };
 		DA26387C22E755F000237F31 /* ProceedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA26387B22E755F000237F31 /* ProceedButton.swift */; };
 		DA26388022E7590300237F31 /* AddGoalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA26387F22E7590300237F31 /* AddGoalViewModel.swift */; };
+		DA26389722E8C43800237F31 /* AddGoalSecondStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA26389622E8C43800237F31 /* AddGoalSecondStepViewController.swift */; };
+		DA26389F22EAB05900237F31 /* FrequencyPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA26389E22EAB05900237F31 /* FrequencyPickerView.swift */; };
+		DA2638A122EAB10900237F31 /* MembersPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2638A022EAB10900237F31 /* MembersPickerView.swift */; };
+		DA2638A322EAB17A00237F31 /* PenaltyPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2638A222EAB17A00237F31 /* PenaltyPickerView.swift */; };
+		DA2638A522EAB1A800237F31 /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2638A422EAB1A800237F31 /* ColorPickerView.swift */; };
+		DA2638A722EAB1C200237F31 /* GoalColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2638A622EAB1C200237F31 /* GoalColor.swift */; };
+		DA2638A922EAB3A900237F31 /* AddGoalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2638A822EAB3A900237F31 /* AddGoalButton.swift */; };
+		DA2638AD22EADE8F00237F31 /* AddGoalSuccessDialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2638AC22EADE8F00237F31 /* AddGoalSuccessDialogViewController.swift */; };
+		DA2638AF22EAE7EA00237F31 /* FrequencyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2638AE22EAE7EA00237F31 /* FrequencyButton.swift */; };
 		DA3C93DB22E2ECE400711267 /* ProfileMetaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3C93DA22E2ECE400711267 /* ProfileMetaView.swift */; };
 		DA3C93DF22E3069C00711267 /* AlertSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3C93DE22E3069C00711267 /* AlertSettingsView.swift */; };
 		DA3C93E122E3073400711267 /* SettingsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3C93E022E3073400711267 /* SettingsHeaderView.swift */; };
@@ -34,6 +43,8 @@
 		DA40A5EE22A27390006431A4 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA40A5ED22A27390006431A4 /* Date.swift */; };
 		DA649B0822D9AE8700F9F371 /* GoalsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA649B0722D9AE8700F9F371 /* GoalsViewModel.swift */; };
 		DA649B0A22D9BF2500F9F371 /* CircularProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA649B0922D9BF2500F9F371 /* CircularProgressBar.swift */; };
+		DAC9551B22EAEA6A00EC2740 /* PenaltyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9551A22EAEA6A00EC2740 /* PenaltyButton.swift */; };
+		DAC9551D22EAECE300EC2740 /* GoalColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9551C22EAECE300EC2740 /* GoalColorButton.swift */; };
 		DAD7A83C22C8D53F00FCA0E5 /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD7A83B22C8D53F00FCA0E5 /* NavigationBarView.swift */; };
 		DAD7A83F22C8D56B00FCA0E5 /* NavigationBarHighlightButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD7A83E22C8D56B00FCA0E5 /* NavigationBarHighlightButton.swift */; };
 		DAD7A84122C8D5C300FCA0E5 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD7A84022C8D5C300FCA0E5 /* CustomTabBarController.swift */; };
@@ -63,7 +74,7 @@
 		DAF0483A22D0867C000CBC4B /* GoalViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF0483922D0867C000CBC4B /* GoalViewCell.swift */; };
 		DAF0483E22D086F6000CBC4B /* PagingCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF0483D22D086F6000CBC4B /* PagingCollectionViewFlowLayout.swift */; };
 		DAF0484122D08DCC000CBC4B /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF0484022D08DCC000CBC4B /* Goal.swift */; };
-		DAF0484422D09558000CBC4B /* AddGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF0484322D09558000CBC4B /* AddGoalViewController.swift */; };
+		DAF0484422D09558000CBC4B /* AddGoalFirstStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF0484322D09558000CBC4B /* AddGoalFirstStepViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +91,15 @@
 		DA26387922E7510700237F31 /* TimerEnabledButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerEnabledButton.swift; sourceTree = "<group>"; };
 		DA26387B22E755F000237F31 /* ProceedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProceedButton.swift; sourceTree = "<group>"; };
 		DA26387F22E7590300237F31 /* AddGoalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalViewModel.swift; sourceTree = "<group>"; };
+		DA26389622E8C43800237F31 /* AddGoalSecondStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalSecondStepViewController.swift; sourceTree = "<group>"; };
+		DA26389E22EAB05900237F31 /* FrequencyPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequencyPickerView.swift; sourceTree = "<group>"; };
+		DA2638A022EAB10900237F31 /* MembersPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembersPickerView.swift; sourceTree = "<group>"; };
+		DA2638A222EAB17A00237F31 /* PenaltyPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenaltyPickerView.swift; sourceTree = "<group>"; };
+		DA2638A422EAB1A800237F31 /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
+		DA2638A622EAB1C200237F31 /* GoalColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalColor.swift; sourceTree = "<group>"; };
+		DA2638A822EAB3A900237F31 /* AddGoalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalButton.swift; sourceTree = "<group>"; };
+		DA2638AC22EADE8F00237F31 /* AddGoalSuccessDialogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalSuccessDialogViewController.swift; sourceTree = "<group>"; };
+		DA2638AE22EAE7EA00237F31 /* FrequencyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequencyButton.swift; sourceTree = "<group>"; };
 		DA3C93DA22E2ECE400711267 /* ProfileMetaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMetaView.swift; sourceTree = "<group>"; };
 		DA3C93DE22E3069C00711267 /* AlertSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertSettingsView.swift; sourceTree = "<group>"; };
 		DA3C93E022E3073400711267 /* SettingsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsHeaderView.swift; sourceTree = "<group>"; };
@@ -96,6 +116,8 @@
 		DA40A5ED22A27390006431A4 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		DA649B0722D9AE8700F9F371 /* GoalsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsViewModel.swift; sourceTree = "<group>"; };
 		DA649B0922D9BF2500F9F371 /* CircularProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressBar.swift; sourceTree = "<group>"; };
+		DAC9551A22EAEA6A00EC2740 /* PenaltyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenaltyButton.swift; sourceTree = "<group>"; };
+		DAC9551C22EAECE300EC2740 /* GoalColorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalColorButton.swift; sourceTree = "<group>"; };
 		DAD7A83B22C8D53F00FCA0E5 /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
 		DAD7A83E22C8D56B00FCA0E5 /* NavigationBarHighlightButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarHighlightButton.swift; sourceTree = "<group>"; };
 		DAD7A84022C8D5C300FCA0E5 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
@@ -128,7 +150,7 @@
 		DAF0483922D0867C000CBC4B /* GoalViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalViewCell.swift; sourceTree = "<group>"; };
 		DAF0483D22D086F6000CBC4B /* PagingCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		DAF0484022D08DCC000CBC4B /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
-		DAF0484322D09558000CBC4B /* AddGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalViewController.swift; sourceTree = "<group>"; };
+		DAF0484322D09558000CBC4B /* AddGoalFirstStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalFirstStepViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +186,35 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DA26389822E8C5B400237F31 /* pickers */ = {
+			isa = PBXGroup;
+			children = (
+				DA26387322E744A200237F31 /* TitlePickerView.swift */,
+				DA26387522E7462600237F31 /* DatePickerView.swift */,
+				DA26387722E7466400237F31 /* VerificationPickerView.swift */,
+				DA26387922E7510700237F31 /* TimerEnabledButton.swift */,
+				DA26389922E8C5C600237F31 /* category */,
+				DA26389E22EAB05900237F31 /* FrequencyPickerView.swift */,
+				DA2638A022EAB10900237F31 /* MembersPickerView.swift */,
+				DA2638A222EAB17A00237F31 /* PenaltyPickerView.swift */,
+				DA2638A422EAB1A800237F31 /* ColorPickerView.swift */,
+				DA2638AE22EAE7EA00237F31 /* FrequencyButton.swift */,
+				DAC9551A22EAEA6A00EC2740 /* PenaltyButton.swift */,
+				DAC9551C22EAECE300EC2740 /* GoalColorButton.swift */,
+			);
+			path = pickers;
+			sourceTree = "<group>";
+		};
+		DA26389922E8C5C600237F31 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				DA26386B22E7390F00237F31 /* CategoryPickerView.swift */,
+				DA26386D22E73CB500237F31 /* CategoryTagsView.swift */,
+				DA26386F22E73DBD00237F31 /* CategoryTagButton.swift */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
 		DA3C93E822E308CB00711267 /* settings */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,7 +233,9 @@
 		DA3C93F122E3170600711267 /* addgoal */ = {
 			isa = PBXGroup;
 			children = (
-				DAF0484322D09558000CBC4B /* AddGoalViewController.swift */,
+				DAF0484322D09558000CBC4B /* AddGoalFirstStepViewController.swift */,
+				DA26389622E8C43800237F31 /* AddGoalSecondStepViewController.swift */,
+				DA2638AC22EADE8F00237F31 /* AddGoalSuccessDialogViewController.swift */,
 				DA26387F22E7590300237F31 /* AddGoalViewModel.swift */,
 			);
 			path = addgoal;
@@ -191,19 +244,14 @@
 		DA40A5E822A26661006431A4 /* customviews */ = {
 			isa = PBXGroup;
 			children = (
+				DA26389822E8C5B400237F31 /* pickers */,
 				DA3C93E822E308CB00711267 /* settings */,
 				DAD7A83D22C8D54400FCA0E5 /* navigation */,
 				DA649B0922D9BF2500F9F371 /* CircularProgressBar.swift */,
 				DA3C93F222E3178900711267 /* LinearProgressBar.swift */,
 				DA3C93DA22E2ECE400711267 /* ProfileMetaView.swift */,
-				DA26386B22E7390F00237F31 /* CategoryPickerView.swift */,
-				DA26386D22E73CB500237F31 /* CategoryTagsView.swift */,
-				DA26386F22E73DBD00237F31 /* CategoryTagButton.swift */,
-				DA26387322E744A200237F31 /* TitlePickerView.swift */,
-				DA26387522E7462600237F31 /* DatePickerView.swift */,
-				DA26387722E7466400237F31 /* VerificationPickerView.swift */,
-				DA26387922E7510700237F31 /* TimerEnabledButton.swift */,
 				DA26387B22E755F000237F31 /* ProceedButton.swift */,
+				DA2638A822EAB3A900237F31 /* AddGoalButton.swift */,
 			);
 			path = customviews;
 			sourceTree = "<group>";
@@ -362,6 +410,7 @@
 			children = (
 				DAF0484022D08DCC000CBC4B /* Goal.swift */,
 				DA3C93EF22E3156B00711267 /* Category.swift */,
+				DA2638A622EAB1C200237F31 /* GoalColor.swift */,
 			);
 			path = entity;
 			sourceTree = "<group>";
@@ -447,7 +496,9 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxGesture/RxGesture.framework",
 				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
@@ -460,7 +511,9 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxGesture.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
@@ -503,6 +556,7 @@
 				DAF0483E22D086F6000CBC4B /* PagingCollectionViewFlowLayout.swift in Sources */,
 				DAD7A83F22C8D56B00FCA0E5 /* NavigationBarHighlightButton.swift in Sources */,
 				DA26387022E73DBD00237F31 /* CategoryTagButton.swift in Sources */,
+				DA2638A322EAB17A00237F31 /* PenaltyPickerView.swift in Sources */,
 				DADBAC09229933A100FD6A5A /* GoalsViewController.swift in Sources */,
 				DA3C93E122E3073400711267 /* SettingsHeaderView.swift in Sources */,
 				DA26388022E7590300237F31 /* AddGoalViewModel.swift in Sources */,
@@ -523,6 +577,7 @@
 				DAD7A84122C8D5C300FCA0E5 /* CustomTabBarController.swift in Sources */,
 				DAD7A84322C8D77100FCA0E5 /* ProfileViewController.swift in Sources */,
 				DADBABFE22992B3600FD6A5A /* LoginViewController.swift in Sources */,
+				DA2638A522EAB1A800237F31 /* ColorPickerView.swift in Sources */,
 				DADBAC1A2299378200FD6A5A /* UIColor.swift in Sources */,
 				DA3C93E522E308B700711267 /* SwitchableSettingsViewCell.swift in Sources */,
 				DA3C93F322E3178900711267 /* LinearProgressBar.swift in Sources */,
@@ -530,18 +585,25 @@
 				DA40A5EA22A269A2006431A4 /* ImagePickerViewController.swift in Sources */,
 				DAF0483222D07C67000CBC4B /* UIButton.swift in Sources */,
 				DAF0483A22D0867C000CBC4B /* GoalViewCell.swift in Sources */,
+				DA2638A722EAB1C200237F31 /* GoalColor.swift in Sources */,
+				DA2638AD22EADE8F00237F31 /* AddGoalSuccessDialogViewController.swift in Sources */,
 				DA26387622E7462600237F31 /* DatePickerView.swift in Sources */,
 				DADBAC1B2299378200FD6A5A /* UITableViewCell.swift in Sources */,
 				DA649B0822D9AE8700F9F371 /* GoalsViewModel.swift in Sources */,
 				DA3C93DF22E3069C00711267 /* AlertSettingsView.swift in Sources */,
 				DADBAC182299378200FD6A5A /* CALayer.swift in Sources */,
 				DA26386E22E73CB500237F31 /* CategoryTagsView.swift in Sources */,
+				DAC9551B22EAEA6A00EC2740 /* PenaltyButton.swift in Sources */,
 				DA26387822E7466400237F31 /* VerificationPickerView.swift in Sources */,
-				DAF0484422D09558000CBC4B /* AddGoalViewController.swift in Sources */,
+				DAF0484422D09558000CBC4B /* AddGoalFirstStepViewController.swift in Sources */,
 				DA40A5EC22A26D5A006431A4 /* TimerViewController.swift in Sources */,
 				DA26387A22E7510700237F31 /* TimerEnabledButton.swift in Sources */,
 				DA3C93F022E3156B00711267 /* Category.swift in Sources */,
+				DA2638A122EAB10900237F31 /* MembersPickerView.swift in Sources */,
 				DA26387C22E755F000237F31 /* ProceedButton.swift in Sources */,
+				DAC9551D22EAECE300EC2740 /* GoalColorButton.swift in Sources */,
+				DA2638A922EAB3A900237F31 /* AddGoalButton.swift in Sources */,
+				DA26389F22EAB05900237F31 /* FrequencyPickerView.swift in Sources */,
 				DA3C93EC22E30C8500711267 /* FeedbackSettingsView.swift in Sources */,
 				DADBAC192299378200FD6A5A /* Array.swift in Sources */,
 				DAF0483722D07E4C000CBC4B /* AddShootViewController.swift in Sources */,
@@ -551,6 +613,8 @@
 				DA649B0A22D9BF2500F9F371 /* CircularProgressBar.swift in Sources */,
 				DA3C93EA22E30BD400711267 /* GoalSettingsView.swift in Sources */,
 				DA26386C22E7390F00237F31 /* CategoryPickerView.swift in Sources */,
+				DA2638AF22EAE7EA00237F31 /* FrequencyButton.swift in Sources */,
+				DA26389722E8C43800237F31 /* AddGoalSecondStepViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

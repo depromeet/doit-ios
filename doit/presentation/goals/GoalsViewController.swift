@@ -128,7 +128,7 @@ extension GoalsViewController: UICollectionViewDataSource, UICollectionViewDeleg
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if indexPath.row == viewModel.goals.value.count {
-            let viewController = AddGoalViewController()
+            let viewController = AddGoalFirstStepViewController()
             self.navigationController?.pushViewController(viewController, animated: true)
         }
     }

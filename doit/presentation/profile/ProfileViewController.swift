@@ -110,7 +110,8 @@ class ProfileViewController: UIViewController {
     private func bindToSubViews() {
         profileMetaView.button.rx.tap
             .bind { [weak self] in
-                // TODO - Log out here...
+                let viewController = LoginViewController()
+                self?.makeRootViewController(viewController: viewController)
             }
             .disposed(by: disposeBag)
         
@@ -142,4 +143,19 @@ class ProfileViewController: UIViewController {
         
     }
     
+    
+    
+    private func makeRootViewController(viewController: UIViewController) {
+        let applicationDelegate = (UIApplication.shared.delegate as? AppDelegate)
+        
+        guard let window = applicationDelegate?.window else { return }
+        window.rootViewController = viewController
+        window.makeKeyAndVisible()
+        
+        UIView.transition(with: window,
+                          duration: 0.3,
+                          options: .transitionCrossDissolve,
+                          animations: nil,
+                          completion: nil)
+    }
 }

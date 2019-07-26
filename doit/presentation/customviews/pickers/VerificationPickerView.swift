@@ -16,6 +16,19 @@ class VerificationPickerView: UIView {
     private lazy var informationTitle = UILabel()
     private lazy var informationDescription = UILabel()
     
+    public var button: UIButton {
+        return timerEnabledButton.button
+    }
+    
+    public var isEnabled: Bool {
+        get {
+            return timerEnabledButton.isEnabled
+        }
+        set {
+            timerEnabledButton.isEnabled = newValue
+        }
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -28,6 +41,8 @@ class VerificationPickerView: UIView {
         titleLabel.font = .settingsHeader
         titleLabel.textColor = .white
         titleLabel.text = "인증방식을 고르세요. (중복가능)"
+        
+        iconImageView.image = UIImage(named: "informationIcon")
         
         informationTitle.font = .informationTitle
         informationTitle.textColor = .white
