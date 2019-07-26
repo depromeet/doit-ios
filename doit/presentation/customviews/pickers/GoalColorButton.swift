@@ -10,6 +10,7 @@ import UIKit
 class GoalColorButton: UIButton {
     
     private lazy var gradientLayer = CAGradientLayer()
+    private lazy var checkIconImageView = UIImageView()
     
     private var _isOn = false
     public var isOn: Bool {
@@ -19,12 +20,11 @@ class GoalColorButton: UIButton {
         set {
             _isOn = newValue
             if _isOn {
-                // TODO
                 layer.addBorder(width: 2, color: UIColor.white.cgColor)
-//                setTitleColor(UIColor.white, for: .normal)
+                checkIconImageView.isHidden = false
             } else {
-                // TODO
                 layer.addBorder(width: 0, color: UIColor.clear.cgColor)
+                checkIconImageView.isHidden = true
             }
         }
     }
@@ -52,8 +52,17 @@ class GoalColorButton: UIButton {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        
+        addSubview(checkIconImageView)
+        
+        checkIconImageView.image = UIImage(named: "checkIcon")
+        checkIconImageView.isHidden = true
     
         layer.roundCorners(radius: 4)
+        
+        checkIconImageView.snp.makeConstraints { make in
+            make.center.equalToSuperview()
+        }
     }
     
     required init?(coder aDecoder: NSCoder) {

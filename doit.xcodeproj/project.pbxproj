@@ -45,6 +45,18 @@
 		DA649B0A22D9BF2500F9F371 /* CircularProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA649B0922D9BF2500F9F371 /* CircularProgressBar.swift */; };
 		DAC9551B22EAEA6A00EC2740 /* PenaltyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9551A22EAEA6A00EC2740 /* PenaltyButton.swift */; };
 		DAC9551D22EAECE300EC2740 /* GoalColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9551C22EAECE300EC2740 /* GoalColorButton.swift */; };
+		DAC9552022EB455600EC2740 /* GoalChooserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9551F22EB455600EC2740 /* GoalChooserViewController.swift */; };
+		DAC9552222EB463A00EC2740 /* GoalChooserViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9552122EB463A00EC2740 /* GoalChooserViewCell.swift */; };
+		DAC9552422EB47FB00EC2740 /* GoalChooserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9552322EB47FB00EC2740 /* GoalChooserViewModel.swift */; };
+		DAC9552722EB59E900EC2740 /* GoalDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9552622EB59E900EC2740 /* GoalDetailViewController.swift */; };
+		DAC9552922EB60D700EC2740 /* GoalDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9552822EB60D700EC2740 /* GoalDetailViewModel.swift */; };
+		DAC9552B22EB647800EC2740 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9552A22EB647800EC2740 /* UILabel.swift */; };
+		DAC9552D22EB668000EC2740 /* GoalDetailMetaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9552C22EB668000EC2740 /* GoalDetailMetaView.swift */; };
+		DAC9552F22EB6AAB00EC2740 /* Numeric.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9552E22EB6AAB00EC2740 /* Numeric.swift */; };
+		DAC9553122EB6E0400EC2740 /* MemberRankViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9553022EB6E0400EC2740 /* MemberRankViewCell.swift */; };
+		DAC9553322EB6F0200EC2740 /* MemberProgessBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9553222EB6F0200EC2740 /* MemberProgessBar.swift */; };
+		DAC9553522EB71D500EC2740 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9553422EB71D500EC2740 /* Member.swift */; };
+		DAC9553722EB776600EC2740 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9553622EB776600EC2740 /* UITableView.swift */; };
 		DAD7A83C22C8D53F00FCA0E5 /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD7A83B22C8D53F00FCA0E5 /* NavigationBarView.swift */; };
 		DAD7A83F22C8D56B00FCA0E5 /* NavigationBarHighlightButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD7A83E22C8D56B00FCA0E5 /* NavigationBarHighlightButton.swift */; };
 		DAD7A84122C8D5C300FCA0E5 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD7A84022C8D5C300FCA0E5 /* CustomTabBarController.swift */; };
@@ -118,6 +130,18 @@
 		DA649B0922D9BF2500F9F371 /* CircularProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressBar.swift; sourceTree = "<group>"; };
 		DAC9551A22EAEA6A00EC2740 /* PenaltyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenaltyButton.swift; sourceTree = "<group>"; };
 		DAC9551C22EAECE300EC2740 /* GoalColorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalColorButton.swift; sourceTree = "<group>"; };
+		DAC9551F22EB455600EC2740 /* GoalChooserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalChooserViewController.swift; sourceTree = "<group>"; };
+		DAC9552122EB463A00EC2740 /* GoalChooserViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalChooserViewCell.swift; sourceTree = "<group>"; };
+		DAC9552322EB47FB00EC2740 /* GoalChooserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalChooserViewModel.swift; sourceTree = "<group>"; };
+		DAC9552622EB59E900EC2740 /* GoalDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalDetailViewController.swift; sourceTree = "<group>"; };
+		DAC9552822EB60D700EC2740 /* GoalDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalDetailViewModel.swift; sourceTree = "<group>"; };
+		DAC9552A22EB647800EC2740 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		DAC9552C22EB668000EC2740 /* GoalDetailMetaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalDetailMetaView.swift; sourceTree = "<group>"; };
+		DAC9552E22EB6AAB00EC2740 /* Numeric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Numeric.swift; sourceTree = "<group>"; };
+		DAC9553022EB6E0400EC2740 /* MemberRankViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberRankViewCell.swift; sourceTree = "<group>"; };
+		DAC9553222EB6F0200EC2740 /* MemberProgessBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberProgessBar.swift; sourceTree = "<group>"; };
+		DAC9553422EB71D500EC2740 /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
+		DAC9553622EB776600EC2740 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		DAD7A83B22C8D53F00FCA0E5 /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
 		DAD7A83E22C8D56B00FCA0E5 /* NavigationBarHighlightButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarHighlightButton.swift; sourceTree = "<group>"; };
 		DAD7A84022C8D5C300FCA0E5 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
@@ -252,8 +276,32 @@
 				DA3C93DA22E2ECE400711267 /* ProfileMetaView.swift */,
 				DA26387B22E755F000237F31 /* ProceedButton.swift */,
 				DA2638A822EAB3A900237F31 /* AddGoalButton.swift */,
+				DAC9552C22EB668000EC2740 /* GoalDetailMetaView.swift */,
+				DAC9553222EB6F0200EC2740 /* MemberProgessBar.swift */,
 			);
 			path = customviews;
+			sourceTree = "<group>";
+		};
+		DAC9551E22EB453C00EC2740 /* addshoot */ = {
+			isa = PBXGroup;
+			children = (
+				DAC9551F22EB455600EC2740 /* GoalChooserViewController.swift */,
+				DAC9552122EB463A00EC2740 /* GoalChooserViewCell.swift */,
+				DAC9552322EB47FB00EC2740 /* GoalChooserViewModel.swift */,
+				DAF0483622D07E4C000CBC4B /* AddShootViewController.swift */,
+				DA40A5E922A269A2006431A4 /* ImagePickerViewController.swift */,
+			);
+			path = addshoot;
+			sourceTree = "<group>";
+		};
+		DAC9552522EB59DC00EC2740 /* goal */ = {
+			isa = PBXGroup;
+			children = (
+				DAC9552622EB59E900EC2740 /* GoalDetailViewController.swift */,
+				DAC9552822EB60D700EC2740 /* GoalDetailViewModel.swift */,
+				DAC9553022EB6E0400EC2740 /* MemberRankViewCell.swift */,
+			);
+			path = goal;
 			sourceTree = "<group>";
 		};
 		DAD7A83D22C8D54400FCA0E5 /* navigation */ = {
@@ -304,13 +352,14 @@
 		DADBABF922992B0F00FD6A5A /* presentation */ = {
 			isa = PBXGroup;
 			children = (
+				DAC9552522EB59DC00EC2740 /* goal */,
+				DAC9551E22EB453C00EC2740 /* addshoot */,
 				DA3C93F122E3170600711267 /* addgoal */,
 				DAF0483822D07E78000CBC4B /* auth */,
 				DAF0483522D07E41000CBC4B /* shoots */,
 				DAF0483422D07D5C000CBC4B /* goals */,
 				DAF0483322D07D53000CBC4B /* profile */,
 				DA40A5E822A26661006431A4 /* customviews */,
-				DA40A5E922A269A2006431A4 /* ImagePickerViewController.swift */,
 				DA40A5EB22A26D5A006431A4 /* TimerViewController.swift */,
 				DAD7A84022C8D5C300FCA0E5 /* CustomTabBarController.swift */,
 			);
@@ -364,6 +413,9 @@
 				DA40A5ED22A27390006431A4 /* Date.swift */,
 				DAD7A84422C8D7F900FCA0E5 /* UIFont.swift */,
 				DAF0483122D07C67000CBC4B /* UIButton.swift */,
+				DAC9552A22EB647800EC2740 /* UILabel.swift */,
+				DAC9552E22EB6AAB00EC2740 /* Numeric.swift */,
+				DAC9553622EB776600EC2740 /* UITableView.swift */,
 			);
 			name = extensions;
 			path = doit/extensions;
@@ -391,7 +443,6 @@
 		DAF0483522D07E41000CBC4B /* shoots */ = {
 			isa = PBXGroup;
 			children = (
-				DAF0483622D07E4C000CBC4B /* AddShootViewController.swift */,
 			);
 			path = shoots;
 			sourceTree = "<group>";
@@ -411,6 +462,7 @@
 				DAF0484022D08DCC000CBC4B /* Goal.swift */,
 				DA3C93EF22E3156B00711267 /* Category.swift */,
 				DA2638A622EAB1C200237F31 /* GoalColor.swift */,
+				DAC9553422EB71D500EC2740 /* Member.swift */,
 			);
 			path = entity;
 			sourceTree = "<group>";
@@ -556,12 +608,18 @@
 				DAF0483E22D086F6000CBC4B /* PagingCollectionViewFlowLayout.swift in Sources */,
 				DAD7A83F22C8D56B00FCA0E5 /* NavigationBarHighlightButton.swift in Sources */,
 				DA26387022E73DBD00237F31 /* CategoryTagButton.swift in Sources */,
+				DAC9553722EB776600EC2740 /* UITableView.swift in Sources */,
+				DAC9553122EB6E0400EC2740 /* MemberRankViewCell.swift in Sources */,
 				DA2638A322EAB17A00237F31 /* PenaltyPickerView.swift in Sources */,
 				DADBAC09229933A100FD6A5A /* GoalsViewController.swift in Sources */,
 				DA3C93E122E3073400711267 /* SettingsHeaderView.swift in Sources */,
+				DAC9552022EB455600EC2740 /* GoalChooserViewController.swift in Sources */,
+				DAC9552D22EB668000EC2740 /* GoalDetailMetaView.swift in Sources */,
 				DA26388022E7590300237F31 /* AddGoalViewModel.swift in Sources */,
+				DAC9553522EB71D500EC2740 /* Member.swift in Sources */,
 				DA40A5EE22A27390006431A4 /* Date.swift in Sources */,
 				DAD7A83C22C8D53F00FCA0E5 /* NavigationBarView.swift in Sources */,
+				DAC9552F22EB6AAB00EC2740 /* Numeric.swift in Sources */,
 				DADBAC1C2299378200FD6A5A /* String.swift in Sources */,
 				DAD7A84922C8E2AA00FCA0E5 /* NavigationBarButton.swift in Sources */,
 				DA3C93DB22E2ECE400711267 /* ProfileMetaView.swift in Sources */,
@@ -580,15 +638,19 @@
 				DA2638A522EAB1A800237F31 /* ColorPickerView.swift in Sources */,
 				DADBAC1A2299378200FD6A5A /* UIColor.swift in Sources */,
 				DA3C93E522E308B700711267 /* SwitchableSettingsViewCell.swift in Sources */,
+				DAC9552422EB47FB00EC2740 /* GoalChooserViewModel.swift in Sources */,
 				DA3C93F322E3178900711267 /* LinearProgressBar.swift in Sources */,
+				DAC9552922EB60D700EC2740 /* GoalDetailViewModel.swift in Sources */,
 				DA26387422E744A200237F31 /* TitlePickerView.swift in Sources */,
 				DA40A5EA22A269A2006431A4 /* ImagePickerViewController.swift in Sources */,
 				DAF0483222D07C67000CBC4B /* UIButton.swift in Sources */,
+				DAC9552B22EB647800EC2740 /* UILabel.swift in Sources */,
 				DAF0483A22D0867C000CBC4B /* GoalViewCell.swift in Sources */,
 				DA2638A722EAB1C200237F31 /* GoalColor.swift in Sources */,
 				DA2638AD22EADE8F00237F31 /* AddGoalSuccessDialogViewController.swift in Sources */,
 				DA26387622E7462600237F31 /* DatePickerView.swift in Sources */,
 				DADBAC1B2299378200FD6A5A /* UITableViewCell.swift in Sources */,
+				DAC9552222EB463A00EC2740 /* GoalChooserViewCell.swift in Sources */,
 				DA649B0822D9AE8700F9F371 /* GoalsViewModel.swift in Sources */,
 				DA3C93DF22E3069C00711267 /* AlertSettingsView.swift in Sources */,
 				DADBAC182299378200FD6A5A /* CALayer.swift in Sources */,
@@ -602,6 +664,7 @@
 				DA2638A122EAB10900237F31 /* MembersPickerView.swift in Sources */,
 				DA26387C22E755F000237F31 /* ProceedButton.swift in Sources */,
 				DAC9551D22EAECE300EC2740 /* GoalColorButton.swift in Sources */,
+				DAC9552722EB59E900EC2740 /* GoalDetailViewController.swift in Sources */,
 				DA2638A922EAB3A900237F31 /* AddGoalButton.swift in Sources */,
 				DA26389F22EAB05900237F31 /* FrequencyPickerView.swift in Sources */,
 				DA3C93EC22E30C8500711267 /* FeedbackSettingsView.swift in Sources */,
@@ -609,6 +672,7 @@
 				DAF0483722D07E4C000CBC4B /* AddShootViewController.swift in Sources */,
 				DADBABFD22992B3600FD6A5A /* SplashViewController.swift in Sources */,
 				DADBABE822992A1A00FD6A5A /* AppDelegate.swift in Sources */,
+				DAC9553322EB6F0200EC2740 /* MemberProgessBar.swift in Sources */,
 				DAD7A84722C8E21800FCA0E5 /* NavigationOption.swift in Sources */,
 				DA649B0A22D9BF2500F9F371 /* CircularProgressBar.swift in Sources */,
 				DA3C93EA22E30BD400711267 /* GoalSettingsView.swift in Sources */,

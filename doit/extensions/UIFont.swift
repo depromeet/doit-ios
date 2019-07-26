@@ -88,5 +88,35 @@ extension UIFont {
         return UIFont.systemFont(ofSize: 15, weight: .bold)
     }
     
+    class var goalChooserViewCell: UIFont {
+        return UIFont.systemFont(ofSize: 25, weight: .bold)
+    }
     
+    class var addShootTextView: UIFont {
+        return UIFont.systemFont(ofSize: 18, weight: .bold)
+    }
+    
+    class var goalDetailTitle: UIFont {
+        return UIFont.systemFont(ofSize: 30, weight: .bold)
+    }
+    
+    class var goalDetailDate: UIFont {
+        return UIFont.systemFont(ofSize: 14, weight: .light)
+    }
+    
+    class var goalDetailMetaLabel: UIFont {
+        return UIFont.systemFont(ofSize: 32, weight: .bold)
+    }
+    
+    class var goalDetailMetaDescription: UIFont {
+        return UIFont.systemFont(ofSize: 14, weight: .regular)
+    }
+    
+    class var rankLabel: UIFont {
+        return UIFont.systemFont(ofSize: 12, weight: .bold)
+    }
+    
+    class var rankPercentage: UIFont {
+        return UIFont.systemFont(ofSize: 20, weight: .regular)
+    }
 }

@@ -68,8 +68,10 @@ class CustomTabBarController: UIViewController {
         navigationBar
             .isHighlightButtonSelected
             .bind { [weak self] in
-                let modalViewController = AddShootViewController()
-                self?.present(modalViewController, animated: true, completion: nil)
+                let modalViewController = GoalChooserViewController()
+                let navigationViewController = UINavigationController(rootViewController: modalViewController)
+                navigationViewController.isNavigationBarHidden = true
+                self?.present(navigationViewController, animated: true, completion: nil)
             }
             .disposed(by: disposeBag)
     }

@@ -44,4 +44,25 @@ extension Goal {
             return "\(percentage)%"
         }
     }
+    
+    var dateText: String {
+        guard
+            let start = start,
+            let end = end else {
+                return ""
+        }
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "YYYY.MM.dd"
+        return "\(dateFormatter.string(from: start)) - \(dateFormatter.string(from: end))"
+    }
+    
+    var daysLeftText: String {
+        return "D-10"
+    }
+    
+    var penaltyText: String {
+        guard let penalty = penalty else { return "" }
+        return "\(penalty.decimalFormat)"
+    }
 }

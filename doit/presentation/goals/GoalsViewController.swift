@@ -14,6 +14,7 @@ class GoalsViewController: UIViewController {
     private var viewModel: GoalsViewModel!
     
     // MARK: - UI elements
+    private lazy var logoImageView = UIImageView()
     private lazy var titleLabel = UILabel()
     private lazy var quoteLabel = UILabel()
     private lazy var collectionViewContainer = UIView()
@@ -25,23 +26,28 @@ class GoalsViewController: UIViewController {
         
         view.backgroundColor = .black
         
+        view.addSubview(logoImageView)
         view.addSubview(titleLabel)
         view.addSubview(quoteLabel)
         view.addSubview(collectionViewContainer)
         
         collectionViewContainer.addSubview(collectionView)
         
-        titleLabel.font = .title1
-        titleLabel.textColor = .white
-        titleLabel.text = "Do it"
+        logoImageView.image = UIImage(named: "goalsDoItIcon")
         
-        quoteLabel.font = .title2
-        quoteLabel.textColor = .white
-        quoteLabel.numberOfLines = 0
-        quoteLabel.text = """
-                          날도 더운데 목표를 이루러 왔네요!
-                          오늘 하루도 화이팅
-                          """
+        let text = NSMutableAttributedString(string: "오늘 할 일을 미루지 말고, 두잇",
+                                             attributes: [
+                                                .font: UIFont(name: "AppleSDGothicNeo-Regular",
+                                                              size: 14.0)!,
+                                                .foregroundColor: UIColor(white: 155.0 / 255.0,
+                                                                          alpha: 1.0),
+                                                .kern: -0.2
+            ])
+        text.addAttributes([
+            .font: UIFont(name: "AppleSDGothicNeo-Bold", size: 14.0)!,
+            .foregroundColor: UIColor.white
+            ], range: NSRange(location: 16, length: 2))
+        quoteLabel.attributedText = text
         
         collectionView.backgroundColor = UIColor.clear
         collectionView.delegate = self
@@ -53,14 +59,14 @@ class GoalsViewController: UIViewController {
         (collectionView.collectionViewLayout as? UICollectionViewFlowLayout)?.itemSize = itemSize
         (collectionView.collectionViewLayout as? UICollectionViewFlowLayout)?.scrollDirection = .horizontal
         
-        titleLabel.snp.makeConstraints { make in
-            make.left.equalToSuperview().inset(30)
-            make.top.equalTo(view.safeAreaLayoutGuide.snp.top).inset(46)
+        logoImageView.snp.makeConstraints { make in
+            make.left.equalToSuperview().inset(33)
+            make.top.equalTo(view.safeAreaLayoutGuide.snp.top).inset(52)
         }
-        
+
         quoteLabel.snp.makeConstraints { make in
-            make.left.equalToSuperview().inset(30)
-            make.top.equalTo(titleLabel.snp.bottom).offset(10)
+            make.left.equalToSuperview().inset(33)
+            make.top.equalTo(logoImageView.snp.bottom).offset(15)
         }
         
         collectionViewContainer.snp.makeConstraints { make in
@@ -128,9 +134,15 @@ extension GoalsViewController: UICollectionViewDataSource, UICollectionViewDeleg
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if indexPath.row == viewModel.goals.value.count {
+            // ADD GOAL
             let viewController = AddGoalFirstStepViewController()
             self.navigationController?.pushViewController(viewController, animated: true)
+        } else {
+            // GOAL DETAIL
+            let viewController = GoalDetailViewController()
+            self.navigationController?.pushViewController(viewController, animated: true)
         }
+        
     }
 }
 
