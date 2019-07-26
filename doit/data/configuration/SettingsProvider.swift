@@ -35,13 +35,23 @@ class SettingsProvider {
     static let shared = SettingsProvider()
     
     var isUserLoggedIn: Bool {
-        get {
-            return UserDefaults.standard[#function] ?? false
-        }
-        set {
-            UserDefaults.standard[#function] = newValue
-        }
+        get { return UserDefaults.standard[#function] ?? false }
+        set { UserDefaults.standard[#function] = newValue }
     }
     
+    var memberId: Int {
+        get { return UserDefaults.standard[#function] ?? 0 }
+        set { UserDefaults.standard[#function] = newValue }
+    }
+    
+    var memberName: String {
+        get { return UserDefaults.standard[#function] ?? "" }
+        set { UserDefaults.standard[#function] = newValue }
+    }
+    
+    var memberProfileImageUrl: String {
+        get { return UserDefaults.standard[#function] ?? "" }
+        set { UserDefaults.standard[#function] = newValue }
+    }
 }
 

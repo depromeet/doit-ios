@@ -18,6 +18,14 @@ class ProfileMetaView: UIView {
         return logoutButton
     }
     
+    public var imageView: UIImageView {
+        return profileImageView
+    }
+    
+    public var name: UILabel {
+        return profileNameLabel
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
      

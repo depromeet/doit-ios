@@ -12,6 +12,7 @@ import RxCocoa
 class LoginViewController: UIViewController {
     
     private var disposeBag = DisposeBag()
+    private var viewModel: LoginViewModel!
     
     // MARK: - UI elements
     private lazy var logoImageView = UIImageView()
@@ -64,7 +65,23 @@ class LoginViewController: UIViewController {
             make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).inset(46)
         }
         
+        viewModel = LoginViewModel()
+        bindToViewModel()
         bindToSubViews()
+        
+    }
+    
+    private func bindToViewModel() {
+        viewModel
+            .authenticationSuccess
+            .bind { [weak self] in
+                SettingsProvider.shared.isUserLoggedIn = true
+                let viewController = CustomTabBarController()
+                let navigationController = UINavigationController(rootViewController: viewController)
+                navigationController.isNavigationBarHidden = true
+                self?.makeRootViewController(viewController: navigationController)
+            }
+            .disposed(by: disposeBag)
     }
     
     private func bindToSubViews() {
@@ -76,7 +93,7 @@ class LoginViewController: UIViewController {
                     session.close()
                 }
                 
-                session.open(completionHandler: { (error) -> Void in
+                session.open(completionHandler: { [weak self] (error) -> Void in
                     
                     if !session.isOpen() {
                         if let error = error as NSError? {
@@ -90,13 +107,7 @@ class LoginViewController: UIViewController {
                     }
                     print("Kakaotalk login complete")
                     print("Access token 🔑 : \(session.accessToken)")
-                    
-                    SettingsProvider.shared.isUserLoggedIn = true
-                    
-                    let viewController = CustomTabBarController()
-                    let navigationController = UINavigationController(rootViewController: viewController)
-                    navigationController.isNavigationBarHidden = true
-                    self?.makeRootViewController(viewController: navigationController)
+                    self?.viewModel.requestLogin(kakaoToken: session.accessToken)
                 })
         }.disposed(by: disposeBag)
     }

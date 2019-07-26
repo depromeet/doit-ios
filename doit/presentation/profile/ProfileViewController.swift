@@ -10,6 +10,7 @@ import RxSwift
 
 class ProfileViewController: UIViewController {
     
+    private var viewModel: ProfileViewModel!
     private var disposeBag = DisposeBag()
     
     // MARK: - UI elements
@@ -99,17 +100,34 @@ class ProfileViewController: UIViewController {
             make.bottom.equalToSuperview()
         }
         
+        viewModel = ProfileViewModel()
+        
         bindToViewModel()
         bindToSubViews()
+        
+        viewModel.fetchMember()
     }
     
     private func bindToViewModel() {
+        viewModel
+            .profileImageUrl
+            .bind { [weak self] url in
+                self?.profileMetaView.imageView.setImage(urlString: url)
+            }
+            .disposed(by: disposeBag)
         
+        viewModel
+            .memberName
+            .bind { [weak self] name in
+                self?.profileMetaView.name.text = name
+            }
+            .disposed(by: disposeBag)
     }
     
     private func bindToSubViews() {
         profileMetaView.button.rx.tap
             .bind { [weak self] in
+                SettingsProvider.shared.isUserLoggedIn = false
                 let viewController = LoginViewController()
                 self?.makeRootViewController(viewController: viewController)
             }

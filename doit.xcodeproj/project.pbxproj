@@ -57,6 +57,13 @@
 		DAC9553322EB6F0200EC2740 /* MemberProgessBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9553222EB6F0200EC2740 /* MemberProgessBar.swift */; };
 		DAC9553522EB71D500EC2740 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9553422EB71D500EC2740 /* Member.swift */; };
 		DAC9553722EB776600EC2740 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9553622EB776600EC2740 /* UITableView.swift */; };
+		DAC9553A22EB8E3700EC2740 /* MemberRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9553922EB8E3700EC2740 /* MemberRepository.swift */; };
+		DAC9553C22EB8E5300EC2740 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9553B22EB8E5300EC2740 /* Router.swift */; };
+		DAC9553E22EB8F0600EC2740 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9553D22EB8F0600EC2740 /* LoginRequest.swift */; };
+		DAC9554022EB8FB900EC2740 /* MemberService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9553F22EB8FB900EC2740 /* MemberService.swift */; };
+		DAC9554222EB907600EC2740 /* DoItError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9554122EB907600EC2740 /* DoItError.swift */; };
+		DAC9554422EB922D00EC2740 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9554322EB922D00EC2740 /* LoginViewModel.swift */; };
+		DAC9554622EB938700EC2740 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9554522EB938700EC2740 /* ProfileViewModel.swift */; };
 		DAD7A83C22C8D53F00FCA0E5 /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD7A83B22C8D53F00FCA0E5 /* NavigationBarView.swift */; };
 		DAD7A83F22C8D56B00FCA0E5 /* NavigationBarHighlightButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD7A83E22C8D56B00FCA0E5 /* NavigationBarHighlightButton.swift */; };
 		DAD7A84122C8D5C300FCA0E5 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD7A84022C8D5C300FCA0E5 /* CustomTabBarController.swift */; };
@@ -142,6 +149,13 @@
 		DAC9553222EB6F0200EC2740 /* MemberProgessBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberProgessBar.swift; sourceTree = "<group>"; };
 		DAC9553422EB71D500EC2740 /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
 		DAC9553622EB776600EC2740 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		DAC9553922EB8E3700EC2740 /* MemberRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberRepository.swift; sourceTree = "<group>"; };
+		DAC9553B22EB8E5300EC2740 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		DAC9553D22EB8F0600EC2740 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		DAC9553F22EB8FB900EC2740 /* MemberService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberService.swift; sourceTree = "<group>"; };
+		DAC9554122EB907600EC2740 /* DoItError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoItError.swift; sourceTree = "<group>"; };
+		DAC9554322EB922D00EC2740 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		DAC9554522EB938700EC2740 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		DAD7A83B22C8D53F00FCA0E5 /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
 		DAD7A83E22C8D56B00FCA0E5 /* NavigationBarHighlightButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarHighlightButton.swift; sourceTree = "<group>"; };
 		DAD7A84022C8D5C300FCA0E5 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
@@ -304,6 +318,14 @@
 			path = goal;
 			sourceTree = "<group>";
 		};
+		DAC9553822EB8E2000EC2740 /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				DAC9553922EB8E3700EC2740 /* MemberRepository.swift */,
+			);
+			path = repository;
+			sourceTree = "<group>";
+		};
 		DAD7A83D22C8D54400FCA0E5 /* navigation */ = {
 			isa = PBXGroup;
 			children = (
@@ -369,6 +391,7 @@
 		DADBABFA22992B1600FD6A5A /* data */ = {
 			isa = PBXGroup;
 			children = (
+				DAC9553822EB8E2000EC2740 /* repository */,
 				DAF0483F22D08DC2000CBC4B /* entity */,
 				DADBAC102299375600FD6A5A /* service */,
 				DADBAC0F2299374E00FD6A5A /* network */,
@@ -390,6 +413,9 @@
 		DADBAC0F2299374E00FD6A5A /* network */ = {
 			isa = PBXGroup;
 			children = (
+				DAC9553B22EB8E5300EC2740 /* Router.swift */,
+				DAC9553D22EB8F0600EC2740 /* LoginRequest.swift */,
+				DAC9554122EB907600EC2740 /* DoItError.swift */,
 			);
 			path = network;
 			sourceTree = "<group>";
@@ -397,6 +423,7 @@
 		DADBAC102299375600FD6A5A /* service */ = {
 			isa = PBXGroup;
 			children = (
+				DAC9553F22EB8FB900EC2740 /* MemberService.swift */,
 			);
 			path = service;
 			sourceTree = "<group>";
@@ -425,6 +452,7 @@
 			isa = PBXGroup;
 			children = (
 				DAD7A84222C8D77100FCA0E5 /* ProfileViewController.swift */,
+				DAC9554522EB938700EC2740 /* ProfileViewModel.swift */,
 			);
 			path = profile;
 			sourceTree = "<group>";
@@ -451,6 +479,7 @@
 			isa = PBXGroup;
 			children = (
 				DADBABFC22992B3600FD6A5A /* LoginViewController.swift */,
+				DAC9554322EB922D00EC2740 /* LoginViewModel.swift */,
 				DADBABFB22992B3600FD6A5A /* SplashViewController.swift */,
 			);
 			path = auth;
@@ -608,6 +637,7 @@
 				DAF0483E22D086F6000CBC4B /* PagingCollectionViewFlowLayout.swift in Sources */,
 				DAD7A83F22C8D56B00FCA0E5 /* NavigationBarHighlightButton.swift in Sources */,
 				DA26387022E73DBD00237F31 /* CategoryTagButton.swift in Sources */,
+				DAC9554622EB938700EC2740 /* ProfileViewModel.swift in Sources */,
 				DAC9553722EB776600EC2740 /* UITableView.swift in Sources */,
 				DAC9553122EB6E0400EC2740 /* MemberRankViewCell.swift in Sources */,
 				DA2638A322EAB17A00237F31 /* PenaltyPickerView.swift in Sources */,
@@ -628,6 +658,7 @@
 				DA26386A22E737AA00237F31 /* Constants.swift in Sources */,
 				DADBAC0D229936CF00FD6A5A /* FontProvider.swift in Sources */,
 				DADBAC1D2299378200FD6A5A /* UIImageView.swift in Sources */,
+				DAC9553A22EB8E3700EC2740 /* MemberRepository.swift in Sources */,
 				DAD7A84522C8D7F900FCA0E5 /* UIFont.swift in Sources */,
 				DA3C93E722E308C800711267 /* TextSettingsViewCell.swift in Sources */,
 				DA3C93E322E308A800711267 /* PlainSettingsViewCell.swift in Sources */,
@@ -647,7 +678,9 @@
 				DAC9552B22EB647800EC2740 /* UILabel.swift in Sources */,
 				DAF0483A22D0867C000CBC4B /* GoalViewCell.swift in Sources */,
 				DA2638A722EAB1C200237F31 /* GoalColor.swift in Sources */,
+				DAC9554022EB8FB900EC2740 /* MemberService.swift in Sources */,
 				DA2638AD22EADE8F00237F31 /* AddGoalSuccessDialogViewController.swift in Sources */,
+				DAC9553C22EB8E5300EC2740 /* Router.swift in Sources */,
 				DA26387622E7462600237F31 /* DatePickerView.swift in Sources */,
 				DADBAC1B2299378200FD6A5A /* UITableViewCell.swift in Sources */,
 				DAC9552222EB463A00EC2740 /* GoalChooserViewCell.swift in Sources */,
@@ -657,7 +690,9 @@
 				DA26386E22E73CB500237F31 /* CategoryTagsView.swift in Sources */,
 				DAC9551B22EAEA6A00EC2740 /* PenaltyButton.swift in Sources */,
 				DA26387822E7466400237F31 /* VerificationPickerView.swift in Sources */,
+				DAC9553E22EB8F0600EC2740 /* LoginRequest.swift in Sources */,
 				DAF0484422D09558000CBC4B /* AddGoalFirstStepViewController.swift in Sources */,
+				DAC9554222EB907600EC2740 /* DoItError.swift in Sources */,
 				DA40A5EC22A26D5A006431A4 /* TimerViewController.swift in Sources */,
 				DA26387A22E7510700237F31 /* TimerEnabledButton.swift in Sources */,
 				DA3C93F022E3156B00711267 /* Category.swift in Sources */,
@@ -668,6 +703,7 @@
 				DA2638A922EAB3A900237F31 /* AddGoalButton.swift in Sources */,
 				DA26389F22EAB05900237F31 /* FrequencyPickerView.swift in Sources */,
 				DA3C93EC22E30C8500711267 /* FeedbackSettingsView.swift in Sources */,
+				DAC9554422EB922D00EC2740 /* LoginViewModel.swift in Sources */,
 				DADBAC192299378200FD6A5A /* Array.swift in Sources */,
 				DAF0483722D07E4C000CBC4B /* AddShootViewController.swift in Sources */,
 				DADBABFD22992B3600FD6A5A /* SplashViewController.swift in Sources */,
