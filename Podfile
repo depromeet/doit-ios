@@ -8,8 +8,10 @@ target 'doit' do
   # Pods for doit
 
   pod 'Firebase/Core'
+  pod 'Firebase/Messaging'
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'RxGesture'
   pod 'Kingfisher'
   pod 'Alamofire', '~> 5.0.0-beta.5'
   pod 'SnapKit', '~> 5.0.0'

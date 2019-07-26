@@ -242,7 +242,7 @@ class AddGoalSecondStepViewController: UIViewController {
     }
     
     private func goBackToGoals() {
-        navigationController?.popToRootViewController(animated: false)
+        navigationController?.popToRootViewController(animated: true)
     }
 }
 
