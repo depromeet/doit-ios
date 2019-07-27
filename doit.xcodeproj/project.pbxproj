@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6071EED8B62B6F65B0BFE3A3 /* Pods_doit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47433DDA09EDEC4C10833BD4 /* Pods_doit.framework */; };
+		DA1D0F0F22EBBAAA0069C32D /* GoalRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1D0F0E22EBBAAA0069C32D /* GoalRequest.swift */; };
 		DA26386A22E737AA00237F31 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA26386922E737AA00237F31 /* Constants.swift */; };
 		DA26386C22E7390F00237F31 /* CategoryPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA26386B22E7390F00237F31 /* CategoryPickerView.swift */; };
 		DA26386E22E73CB500237F31 /* CategoryTagsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA26386D22E73CB500237F31 /* CategoryTagsView.swift */; };
@@ -64,6 +65,8 @@
 		DAC9554222EB907600EC2740 /* DoItError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9554122EB907600EC2740 /* DoItError.swift */; };
 		DAC9554422EB922D00EC2740 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9554322EB922D00EC2740 /* LoginViewModel.swift */; };
 		DAC9554622EB938700EC2740 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9554522EB938700EC2740 /* ProfileViewModel.swift */; };
+		DAC9554822EB95DE00EC2740 /* GoalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9554722EB95DE00EC2740 /* GoalRepository.swift */; };
+		DAC9554A22EB97C100EC2740 /* GoalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9554922EB97C100EC2740 /* GoalService.swift */; };
 		DAD7A83C22C8D53F00FCA0E5 /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD7A83B22C8D53F00FCA0E5 /* NavigationBarView.swift */; };
 		DAD7A83F22C8D56B00FCA0E5 /* NavigationBarHighlightButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD7A83E22C8D56B00FCA0E5 /* NavigationBarHighlightButton.swift */; };
 		DAD7A84122C8D5C300FCA0E5 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD7A84022C8D5C300FCA0E5 /* CustomTabBarController.swift */; };
@@ -100,6 +103,7 @@
 		321E332FC45F75F1461D8BBF /* Pods-doit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-doit/Pods-doit.debug.xcconfig"; sourceTree = "<group>"; };
 		47433DDA09EDEC4C10833BD4 /* Pods_doit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_doit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		906B48CFB9F90F305776D360 /* Pods-doit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doit.release.xcconfig"; path = "Pods/Target Support Files/Pods-doit/Pods-doit.release.xcconfig"; sourceTree = "<group>"; };
+		DA1D0F0E22EBBAAA0069C32D /* GoalRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalRequest.swift; sourceTree = "<group>"; };
 		DA26386922E737AA00237F31 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DA26386B22E7390F00237F31 /* CategoryPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPickerView.swift; sourceTree = "<group>"; };
 		DA26386D22E73CB500237F31 /* CategoryTagsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTagsView.swift; sourceTree = "<group>"; };
@@ -156,6 +160,8 @@
 		DAC9554122EB907600EC2740 /* DoItError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoItError.swift; sourceTree = "<group>"; };
 		DAC9554322EB922D00EC2740 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		DAC9554522EB938700EC2740 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		DAC9554722EB95DE00EC2740 /* GoalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalRepository.swift; sourceTree = "<group>"; };
+		DAC9554922EB97C100EC2740 /* GoalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalService.swift; sourceTree = "<group>"; };
 		DAD7A83B22C8D53F00FCA0E5 /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
 		DAD7A83E22C8D56B00FCA0E5 /* NavigationBarHighlightButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarHighlightButton.swift; sourceTree = "<group>"; };
 		DAD7A84022C8D5C300FCA0E5 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
@@ -322,6 +328,7 @@
 			isa = PBXGroup;
 			children = (
 				DAC9553922EB8E3700EC2740 /* MemberRepository.swift */,
+				DAC9554722EB95DE00EC2740 /* GoalRepository.swift */,
 			);
 			path = repository;
 			sourceTree = "<group>";
@@ -416,6 +423,7 @@
 				DAC9553B22EB8E5300EC2740 /* Router.swift */,
 				DAC9553D22EB8F0600EC2740 /* LoginRequest.swift */,
 				DAC9554122EB907600EC2740 /* DoItError.swift */,
+				DA1D0F0E22EBBAAA0069C32D /* GoalRequest.swift */,
 			);
 			path = network;
 			sourceTree = "<group>";
@@ -424,6 +432,7 @@
 			isa = PBXGroup;
 			children = (
 				DAC9553F22EB8FB900EC2740 /* MemberService.swift */,
+				DAC9554922EB97C100EC2740 /* GoalService.swift */,
 			);
 			path = service;
 			sourceTree = "<group>";
@@ -642,9 +651,11 @@
 				DAC9553122EB6E0400EC2740 /* MemberRankViewCell.swift in Sources */,
 				DA2638A322EAB17A00237F31 /* PenaltyPickerView.swift in Sources */,
 				DADBAC09229933A100FD6A5A /* GoalsViewController.swift in Sources */,
+				DAC9554822EB95DE00EC2740 /* GoalRepository.swift in Sources */,
 				DA3C93E122E3073400711267 /* SettingsHeaderView.swift in Sources */,
 				DAC9552022EB455600EC2740 /* GoalChooserViewController.swift in Sources */,
 				DAC9552D22EB668000EC2740 /* GoalDetailMetaView.swift in Sources */,
+				DA1D0F0F22EBBAAA0069C32D /* GoalRequest.swift in Sources */,
 				DA26388022E7590300237F31 /* AddGoalViewModel.swift in Sources */,
 				DAC9553522EB71D500EC2740 /* Member.swift in Sources */,
 				DA40A5EE22A27390006431A4 /* Date.swift in Sources */,
@@ -653,6 +664,7 @@
 				DADBAC1C2299378200FD6A5A /* String.swift in Sources */,
 				DAD7A84922C8E2AA00FCA0E5 /* NavigationBarButton.swift in Sources */,
 				DA3C93DB22E2ECE400711267 /* ProfileMetaView.swift in Sources */,
+				DAC9554A22EB97C100EC2740 /* GoalService.swift in Sources */,
 				DAF0484122D08DCC000CBC4B /* Goal.swift in Sources */,
 				DADBAC0E229936CF00FD6A5A /* SettingsProvider.swift in Sources */,
 				DA26386A22E737AA00237F31 /* Constants.swift in Sources */,

@@ -18,16 +18,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="wB2-2I-enb">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashLogoImage" translatesAutoresizingMaskIntoConstraints="NO" id="KUj-gd-6M5">
+                                <rect key="frame" x="125" y="407.5" width="164" height="91"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.098039215686274508" green="0.098039215686274508" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wB2-2I-enb" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="1rz-RY-Z7o"/>
-                            <constraint firstAttribute="bottom" secondItem="wB2-2I-enb" secondAttribute="bottom" id="DJx-3w-oYX"/>
-                            <constraint firstItem="wB2-2I-enb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uCz-be-hYJ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wB2-2I-enb" secondAttribute="trailing" id="uRE-2I-zu7"/>
+                            <constraint firstItem="KUj-gd-6M5" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="eCH-d8-K6g"/>
+                            <constraint firstItem="KUj-gd-6M5" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="yNo-lL-0S5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -38,6 +36,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="splash" width="444" height="961"/>
+        <image name="splashLogoImage" width="164" height="91"/>
     </resources>
 </document>

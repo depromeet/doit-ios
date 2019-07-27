@@ -190,4 +190,10 @@ class GoalViewCell: UICollectionViewCell {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        contentView.subviews.forEach({ $0.removeFromSuperview() })
+    }
 }

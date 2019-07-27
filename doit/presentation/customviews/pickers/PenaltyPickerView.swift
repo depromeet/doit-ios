@@ -19,6 +19,14 @@ enum Penalty: CaseIterable {
         case .etc:          return "기타"
         }
     }
+    
+    var inWon: Int {
+        switch self {
+        case .fiveThousand: return 5000
+        case .tenThousand:  return 10000
+        case .etc:          return 0
+        }
+    }
 }
 
 class PenaltyPickerView: UIView {

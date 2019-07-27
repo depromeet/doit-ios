@@ -27,6 +27,7 @@ class AddGoalSecondStepViewController: UIViewController {
     private let selectedColor: BehaviorRelay<GoalColor?> = BehaviorRelay(value: nil)
     
     private var disposeBag = DisposeBag()
+    var viewModel: AddGoalViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -120,19 +121,9 @@ class AddGoalSecondStepViewController: UIViewController {
             make.bottom.lessThanOrEqualToSuperview().inset(30)
         }
         
-        bindToSubViews()
         bindToViewModel()
-    }
-    
-    @objc func done() {
-        navigationController?.popViewController(animated: true)
-    }
-    
-    func showSuccessDialog() {
+        bindToSubViews()
         
-    }
-    
-    private func bindToViewModel() {
         Frequency.allCases.forEach({ frequency in
             let button = FrequencyButton()
             button.frequency = frequency
@@ -210,6 +201,30 @@ class AddGoalSecondStepViewController: UIViewController {
         })
     }
     
+    @objc func done() {
+        navigationController?.popViewController(animated: true)
+    }
+    
+    func showSuccessDialog() {
+        
+    }
+    
+    private func bindToViewModel() {
+        viewModel
+            .goalSuccessfullyCreated
+            .bind { [weak self] in
+                let viewController = AddGoalSuccessDialogViewController()
+                viewController.modalPresentationStyle = .overFullScreen
+                viewController.modalTransitionStyle = .crossDissolve
+                viewController.dismissHandler = { [weak self] in
+                    self?.goBackToGoals()
+                }
+                
+                self?.present(viewController, animated: true, completion: {})
+            }
+            .disposed(by: disposeBag)
+    }
+    
     private func bindToSubViews() {
         Observable.combineLatest(
                 selectedFrequency,
@@ -222,20 +237,20 @@ class AddGoalSecondStepViewController: UIViewController {
                     color != nil
                 
                 self?.addGoalButton.isEnabled = canProceed
+                
+                if canProceed {
+                    self?.viewModel.saveSecondStepForm(frequency: frequency!,
+                                                       numberOfContestants: 0,
+                                                       penalty: penalty!.inWon,
+                                                       color: color!)
+                }
             }
             .disposed(by: disposeBag)
         
         addGoalButton.button.rx.tap
             .bind { [weak self] in
                 if let button = self?.addGoalButton, button.isEnabled {
-                    let viewController = AddGoalSuccessDialogViewController()
-                    viewController.modalPresentationStyle = .overFullScreen
-                    viewController.modalTransitionStyle = .crossDissolve
-                    viewController.dismissHandler = { [weak self] in
-                       self?.goBackToGoals()
-                    }
-                    
-                    self?.present(viewController, animated: true, completion: {})
+                    self?.viewModel.requestGoalCreation()
                 }
             }
             .disposed(by: disposeBag)

@@ -22,6 +22,7 @@ class AddGoalFirstStepViewController: UIViewController {
     private lazy var verificationPicker = VerificationPickerView()
     private lazy var proceedButton = ProceedButton()
     
+    private var viewModel: AddGoalViewModel!
     private var disposeBag = DisposeBag()
     private let selectedCategory: BehaviorRelay<Category?> = BehaviorRelay(value: nil)
     
@@ -123,21 +124,11 @@ class AddGoalFirstStepViewController: UIViewController {
         // Needed for category picker
         view.layoutIfNeeded()
         
+        viewModel = AddGoalViewModel()
+        
         bindToViewModel()
         bindToSubViews()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
         
-        progressBar.progress = 1.0
-    }
-    
-    @objc func done() {
-        navigationController?.popViewController(animated: true)
-    }
-    
-    private func bindToViewModel() {
         categoryPicker.categoryTagsView.categoryTabs = Category.allCases.map { category in
             let button = CategoryTagButton(category: category)
             
@@ -160,6 +151,19 @@ class AddGoalFirstStepViewController: UIViewController {
         }
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        progressBar.progress = 1.0
+    }
+    
+    @objc func done() {
+        navigationController?.popViewController(animated: true)
+    }
+    
+    private func bindToViewModel() {
+    }
+    
     private func bindToSubViews() {
         Observable.combineLatest(
                 selectedCategory,
@@ -168,12 +172,22 @@ class AddGoalFirstStepViewController: UIViewController {
                 datePicker.end.rx.text
             )
             .bind { [weak self] category, title, start, end in
+                guard let self = self else { return }
+                
                 let canProceed = category != nil &&
                                  (title?.isNotEmpty ?? false) &&
                                  (start?.isNotEmpty ?? false) &&
                                  (end?.isNotEmpty ?? false)
                 
-                self?.proceedButton.isEnabled = canProceed
+                self.proceedButton.isEnabled = canProceed
+                
+                if canProceed {
+                    self.viewModel.saveFirstStepForm(category: category!,
+                                                     title: title!,
+                                                     startDate: self.datePicker.startDate,
+                                                     endDate: self.datePicker.endDate,
+                                                     isTimeEnabled: self.verificationPicker.isEnabled)
+                }
             }
             .disposed(by: disposeBag)
         
@@ -187,6 +201,7 @@ class AddGoalFirstStepViewController: UIViewController {
             .bind { [weak self] in
                 if let button = self?.proceedButton, button.isEnabled {
                     let viewController = AddGoalSecondStepViewController()
+                    viewController.viewModel = self?.viewModel
                     self?.navigationController?.pushViewController(viewController, animated: true)
                 }
             }

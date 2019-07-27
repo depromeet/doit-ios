@@ -11,17 +11,29 @@ class DatePickerView: UIView {
     
     // MARK: - UI elements
     private lazy var titleLabel = UILabel()
-    private lazy var startDate = UITextField()
-    private lazy var endDate = UITextField()
+    private lazy var startDateLabel = UITextField()
+    private lazy var endDateLabel = UITextField()
     private lazy var backgroundView = UIView()
     private lazy var divider = UIView()
     
     public var start: UITextField {
-        return startDate
+        return startDateLabel
+    }
+    
+    public var startDate: Date {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy년 M월 d일"
+        return dateFormatter.date(from: startDateLabel.text ?? "") ?? Date()
     }
     
     public var end: UITextField {
-        return endDate
+        return endDateLabel
+    }
+    
+    public var endDate: Date {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy년 M월 d일"
+        return dateFormatter.date(from: endDateLabel.text ?? "") ?? Date()
     }
     
     override init(frame: CGRect) {
@@ -30,8 +42,8 @@ class DatePickerView: UIView {
         addSubview(titleLabel)
         addSubview(backgroundView)
         addSubview(divider)
-        addSubview(startDate)
-        addSubview(endDate)
+        addSubview(startDateLabel)
+        addSubview(endDateLabel)
         
         titleLabel.font = .settingsHeader
         titleLabel.textColor = .white
@@ -42,13 +54,13 @@ class DatePickerView: UIView {
         
         divider.backgroundColor = .veryLightPinkTwo
         
-        startDate.font = .categoryTag
-        startDate.textColor = .white
-        startDate.attributedPlaceholder = NSAttributedString(string: "2019년 6월 1일", attributes: [
+        startDateLabel.font = .categoryTag
+        startDateLabel.textColor = .white
+        startDateLabel.attributedPlaceholder = NSAttributedString(string: "2019년 6월 1일", attributes: [
             .foregroundColor : UIColor.brownishGrey,
             .font: UIFont.categoryTag
             ])
-        startDate.textAlignment = .center
+        startDateLabel.textAlignment = .center
         
         let toolBar = UIToolbar()
         toolBar.barStyle = .default
@@ -66,24 +78,24 @@ class DatePickerView: UIView {
         
         let startDatePicker = UIDatePicker()
         startDatePicker.datePickerMode = .date
-        startDate.inputView = startDatePicker
-        startDate.inputAccessoryView = toolBar
+        startDateLabel.inputView = startDatePicker
+        startDateLabel.inputAccessoryView = toolBar
         startDatePicker.addTarget(self,
                                   action: #selector(startDateChanged),
                                   for: .valueChanged)
         
-        endDate.font = .categoryTag
-        endDate.textColor = .white
-        endDate.attributedPlaceholder = NSAttributedString(string: "2019년 7월 30일", attributes: [
+        endDateLabel.font = .categoryTag
+        endDateLabel.textColor = .white
+        endDateLabel.attributedPlaceholder = NSAttributedString(string: "2019년 7월 30일", attributes: [
             .foregroundColor : UIColor.brownishGrey,
             .font: UIFont.categoryTag
             ])
-        endDate.textAlignment = .center
+        endDateLabel.textAlignment = .center
         
         let endDatePicker = UIDatePicker()
         endDatePicker.datePickerMode = .date
-        endDate.inputView = endDatePicker
-        endDate.inputAccessoryView = toolBar
+        endDateLabel.inputView = endDatePicker
+        endDateLabel.inputAccessoryView = toolBar
         endDatePicker.addTarget(self,
                                   action: #selector(endDateChanged),
                                   for: .valueChanged)
@@ -93,14 +105,14 @@ class DatePickerView: UIView {
             make.top.equalToSuperview().inset(30)
         }
         
-        startDate.snp.makeConstraints { make in
+        startDateLabel.snp.makeConstraints { make in
             make.left.equalTo(backgroundView)
             make.top.equalTo(backgroundView)
             make.bottom.equalTo(backgroundView)
             make.right.equalTo(divider.snp.left)
         }
         
-        endDate.snp.makeConstraints { make in
+        endDateLabel.snp.makeConstraints { make in
             make.left.equalTo(divider.snp.right)
             make.top.equalTo(backgroundView)
             make.bottom.equalTo(backgroundView)
@@ -130,13 +142,13 @@ class DatePickerView: UIView {
     @objc func startDateChanged(sender: UIDatePicker) {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy년 M월 d일"
-        startDate.text = dateFormatter.string(from: sender.date)
+        startDateLabel.text = dateFormatter.string(from: sender.date)
     }
     
     @objc func endDateChanged(sender: UIDatePicker) {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy년 M월 d일"
-        endDate.text = dateFormatter.string(from: sender.date)
+        endDateLabel.text = dateFormatter.string(from: sender.date)
     }
     
     @objc func datePickingDone() {

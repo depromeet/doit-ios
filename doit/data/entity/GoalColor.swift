@@ -40,6 +40,10 @@ enum GoalColor {
         case .violet:       return .candyPink
         }
     }
+    
+    var encodedString: String {
+        return "\(startingColor.hexString):\(endingColor.hexString)"
+    }
 }
 
 extension GoalColor: CaseIterable {}

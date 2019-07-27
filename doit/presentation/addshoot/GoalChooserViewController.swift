@@ -84,7 +84,13 @@ class GoalChooserViewController: UIViewController {
     }
     
     private func bindToViewModel() {
-        
+        viewModel
+            .goals
+            .bind { [weak self] _ in
+                self?.tableView.reloadData()
+            }
+            .disposed(by: disposeBag
+        )
     }
     
     private func bindToSubViews() {
