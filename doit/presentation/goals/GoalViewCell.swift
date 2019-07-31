@@ -22,6 +22,7 @@ class GoalViewCell: UICollectionViewCell {
     private lazy var addTitle = UILabel()
     private lazy var addDescription = UILabel()
     
+    private lazy var gradientLayer = CAGradientLayer()
     private lazy var titleLabel = UILabel()
     private lazy var subtitleLabel = UILabel()
     private lazy var moreButton = UIButton()
@@ -157,15 +158,14 @@ class GoalViewCell: UICollectionViewCell {
             _goal = newValue
             
             // Gradient backgroud
-            let gradientLayer = CAGradientLayer()
             gradientLayer.colors = [_goal?.startingColor?.cgColor, _goal?.endingColor?.cgColor]
             gradientLayer.startPoint = CGPoint(x: 0, y: 0)
             gradientLayer.endPoint = CGPoint(x: 1, y: 1)
             gradientLayer.locations = [0, 1]
-            gradientLayer.frame = bounds
+            gradientLayer.frame = contentView.bounds
             
-            layer.insertSublayer(gradientLayer, at: 0)
-            layer.roundCorners(radius: 4)
+            contentView.layer.insertSublayer(gradientLayer, at: 0)
+            contentView.layer.roundCorners(radius: 4)
             
             titleLabel.text = _goal?.title
             subtitleLabel.text = _goal?.subtitle
@@ -184,7 +184,7 @@ class GoalViewCell: UICollectionViewCell {
         super.init(frame: frame)
         
         contentView.layer.roundCorners(radius: 4)
-        layer.addShadow(radius: 4.5, opacity: 0.12)
+        contentView.layer.addShadow(radius: 4.5, opacity: 0.12)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -193,7 +193,7 @@ class GoalViewCell: UICollectionViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
-        
+        gradientLayer.removeFromSuperlayer()
         contentView.subviews.forEach({ $0.removeFromSuperview() })
     }
 }

@@ -107,8 +107,9 @@ class GoalDetailViewController: UIViewController {
         
         bindToViewModel()
         bindToSubViews()
-        
-        viewModel.fetchGoal()
+        if let id = goalId {
+            viewModel.fetchGoal(id: id)
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -139,6 +140,14 @@ class GoalDetailViewController: UIViewController {
                 self?.dateLabel.addCharactersSpacing(spacing: 1.5, text: goal.dateText)
                 self?.metaView.daysLeftText = goal.daysLeftText
                 self?.metaView.penaltyText = goal.penaltyText
+            }
+            .disposed(by: disposeBag)
+        
+        
+        viewModel
+            .members
+            .bind { [weak self] _ in
+                self?.tableView.reloadData()
             }
             .disposed(by: disposeBag)
     }

@@ -107,11 +107,10 @@ extension GoalChooserViewController: UITableViewDataSource, UITableViewDelegate 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: GoalChooserViewCell.identifier) as! GoalChooserViewCell
         
-        guard let goal = viewModel.goals.value.item(at: indexPath.row) else {
+        guard let joinedGoal = viewModel.goals.value.item(at: indexPath.row) else {
             return cell
         }
-        cell.goal = goal
-        
+        cell.goal = joinedGoal.goal
         return cell
     }
     

@@ -22,9 +22,14 @@ class GoalRepository {
     }
     
     
-    func getList() -> Single<[Goal]> {
+    func getList() -> Single<[JoinedGoal]> {
         
         let memberId = SettingsProvider.shared.memberId
         return GoalService.shared.fetchList(memberId: memberId)
+    }
+    
+    func getDetail(for id: Int) -> Single<JoinedGoal> {
+        
+        return GoalService.shared.fetchDetail(goalId: id)
     }
 }

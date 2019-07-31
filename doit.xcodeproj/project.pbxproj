@@ -100,6 +100,7 @@
 		DAFF035D22EC30D1004A54E1 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFF035C22EC30D1004A54E1 /* OnBoardingViewController.swift */; };
 		DAFF035F22EC38C3004A54E1 /* OnBoardingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFF035E22EC38C3004A54E1 /* OnBoardingPage.swift */; };
 		DAFF038F22F1E56D004A54E1 /* OnBoardingViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFF038E22F1E56D004A54E1 /* OnBoardingViewCell.swift */; };
+		DAFF039322F1ED8D004A54E1 /* JoinedGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFF039222F1ED8D004A54E1 /* JoinedGoal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -201,6 +202,7 @@
 		DAFF035C22EC30D1004A54E1 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		DAFF035E22EC38C3004A54E1 /* OnBoardingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingPage.swift; sourceTree = "<group>"; };
 		DAFF038E22F1E56D004A54E1 /* OnBoardingViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewCell.swift; sourceTree = "<group>"; };
+		DAFF039222F1ED8D004A54E1 /* JoinedGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinedGoal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -505,6 +507,7 @@
 			isa = PBXGroup;
 			children = (
 				DAF0484022D08DCC000CBC4B /* Goal.swift */,
+				DAFF039222F1ED8D004A54E1 /* JoinedGoal.swift */,
 				DA3C93EF22E3156B00711267 /* Category.swift */,
 				DA2638A622EAB1C200237F31 /* GoalColor.swift */,
 				DAC9553422EB71D500EC2740 /* Member.swift */,
@@ -691,6 +694,7 @@
 				DAC9553A22EB8E3700EC2740 /* MemberRepository.swift in Sources */,
 				DAD7A84522C8D7F900FCA0E5 /* UIFont.swift in Sources */,
 				DA3C93E722E308C800711267 /* TextSettingsViewCell.swift in Sources */,
+				DAFF039322F1ED8D004A54E1 /* JoinedGoal.swift in Sources */,
 				DA3C93E322E308A800711267 /* PlainSettingsViewCell.swift in Sources */,
 				DA3C93EE22E30C8D00711267 /* AppSettingsView.swift in Sources */,
 				DAD7A84122C8D5C300FCA0E5 /* CustomTabBarController.swift in Sources */,

@@ -12,7 +12,7 @@ class GoalChooserViewModel {
     
     private var disposeBag = DisposeBag()
     
-    public let goals: BehaviorRelay<[Goal]> = BehaviorRelay(value: [])
+    public let goals: BehaviorRelay<[JoinedGoal]> = BehaviorRelay(value: [])
     
     func fetchGoals() {
         
@@ -20,8 +20,8 @@ class GoalChooserViewModel {
             .observeOn(MainScheduler.instance)
             .subscribe(onSuccess: { [weak self] goals in
                 self?.goals.accept(goals)
-                }, onError: { error in
-                    print(error)
+            }, onError: { error in
+                print(error)
             })
             .disposed(by: disposeBag)
         

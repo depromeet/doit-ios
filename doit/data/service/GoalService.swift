@@ -42,9 +42,9 @@ class GoalService {
         }
     }
     
-    func fetchList(memberId: Int) -> Single<[Goal]> {
+    func fetchList(memberId: Int) -> Single<[JoinedGoal]> {
         
-        return Single<[Goal]>.create { observer in
+        return Single<[JoinedGoal]>.create { observer in
             let utilityQueue = DispatchQueue.global(qos: .utility)
             
             let route = Router.goalsList(memberId: memberId)
@@ -61,7 +61,38 @@ class GoalService {
                     }
                     let decoder = JSONDecoder()
                     do {
-                        let response = try decoder.decode([Goal].self, from: data)
+                        let response = try decoder.decode([JoinedGoal].self, from: data)
+                        observer(.success(response))
+                    } catch {
+                        observer(.error(DoItError.responseNotMappable))
+                        print(error)
+                    }
+            }
+            
+            return Disposables.create() { call.cancel() }
+        }
+    }
+    
+    func fetchDetail(goalId: Int) -> Single<JoinedGoal> {
+        
+        return Single<JoinedGoal>.create { observer in
+            let utilityQueue = DispatchQueue.global(qos: .utility)
+            
+            let route = Router.goalDetail(goalId: goalId)
+            let call = AF.request(route)
+                .validate()
+                .responseData(queue: utilityQueue) { response in
+                    if let error = response.error {
+                        observer(.error(error))
+                        print(error)
+                    }
+                    guard let data = response.data else {
+                        observer(.error(DoItError.responseEmpty))
+                        return
+                    }
+                    let decoder = JSONDecoder()
+                    do {
+                        let response = try decoder.decode(JoinedGoal.self, from: data)
                         observer(.success(response))
                     } catch {
                         observer(.error(DoItError.responseNotMappable))

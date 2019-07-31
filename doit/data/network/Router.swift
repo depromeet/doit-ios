@@ -11,13 +11,14 @@ enum Router: URLRequestConvertible {
     case login(kakaoToken: String)
     case createGoal(goalRequest: GoalRequest)
     case goalsList(memberId: Int)
+    case goalDetail(goalId: Int)
     
     // MARK: - API HTTP Method
     var method: HTTPMethod {
         switch self {
         case .login, .createGoal:
             return .post
-        case .goalsList:
+        case .goalsList, .goalDetail:
             return .get
         }
     }
@@ -31,6 +32,8 @@ enum Router: URLRequestConvertible {
             return "/api/goals/create"
         case .goalsList(let memberId):
             return "/api/goals/\(memberId)"
+        case .goalDetail(let goalId):
+            return "/api/goal/\(goalId)"
         }
     }
     

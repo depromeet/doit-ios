@@ -88,6 +88,10 @@ class GoalsViewController: UIViewController {
         
         bindToViewModel()
         bindToSubViews()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         
         viewModel.fetchGoals()
     }
@@ -120,9 +124,8 @@ extension GoalsViewController: UICollectionViewDataSource, UICollectionViewDeleg
             cell.type = .addGoal
         } else {
             cell.type = .normal
-            cell.goal = viewModel.goals.value.item(at: indexPath.row)
+            cell.goal = viewModel.goals.value.item(at: indexPath.row)?.goal
             cell.button.rx.tap
-                .debug()
                 .bind { [weak self] _ in
                     
                 }
@@ -140,6 +143,8 @@ extension GoalsViewController: UICollectionViewDataSource, UICollectionViewDeleg
         } else {
             // GOAL DETAIL
             let viewController = GoalDetailViewController()
+            let goal = viewModel.goals.value.item(at: indexPath.row)?.goal
+            viewController.goalId = goal?.id
             self.navigationController?.pushViewController(viewController, animated: true)
         }
         
