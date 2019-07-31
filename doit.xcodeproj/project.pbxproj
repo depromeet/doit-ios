@@ -97,6 +97,9 @@
 		DAF0483E22D086F6000CBC4B /* PagingCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF0483D22D086F6000CBC4B /* PagingCollectionViewFlowLayout.swift */; };
 		DAF0484122D08DCC000CBC4B /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF0484022D08DCC000CBC4B /* Goal.swift */; };
 		DAF0484422D09558000CBC4B /* AddGoalFirstStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF0484322D09558000CBC4B /* AddGoalFirstStepViewController.swift */; };
+		DAFF035D22EC30D1004A54E1 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFF035C22EC30D1004A54E1 /* OnBoardingViewController.swift */; };
+		DAFF035F22EC38C3004A54E1 /* OnBoardingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFF035E22EC38C3004A54E1 /* OnBoardingPage.swift */; };
+		DAFF038F22F1E56D004A54E1 /* OnBoardingViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFF038E22F1E56D004A54E1 /* OnBoardingViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -195,6 +198,9 @@
 		DAF0483D22D086F6000CBC4B /* PagingCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		DAF0484022D08DCC000CBC4B /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
 		DAF0484322D09558000CBC4B /* AddGoalFirstStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalFirstStepViewController.swift; sourceTree = "<group>"; };
+		DAFF035C22EC30D1004A54E1 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
+		DAFF035E22EC38C3004A54E1 /* OnBoardingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingPage.swift; sourceTree = "<group>"; };
+		DAFF038E22F1E56D004A54E1 /* OnBoardingViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -381,6 +387,7 @@
 		DADBABF922992B0F00FD6A5A /* presentation */ = {
 			isa = PBXGroup;
 			children = (
+				DAFF035B22EC30C2004A54E1 /* onboarding */,
 				DAC9552522EB59DC00EC2740 /* goal */,
 				DAC9551E22EB453C00EC2740 /* addshoot */,
 				DA3C93F122E3170600711267 /* addgoal */,
@@ -503,6 +510,16 @@
 				DAC9553422EB71D500EC2740 /* Member.swift */,
 			);
 			path = entity;
+			sourceTree = "<group>";
+		};
+		DAFF035B22EC30C2004A54E1 /* onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				DAFF035C22EC30D1004A54E1 /* OnBoardingViewController.swift */,
+				DAFF038E22F1E56D004A54E1 /* OnBoardingViewCell.swift */,
+				DAFF035E22EC38C3004A54E1 /* OnBoardingPage.swift */,
+			);
+			path = onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -648,6 +665,7 @@
 				DA26387022E73DBD00237F31 /* CategoryTagButton.swift in Sources */,
 				DAC9554622EB938700EC2740 /* ProfileViewModel.swift in Sources */,
 				DAC9553722EB776600EC2740 /* UITableView.swift in Sources */,
+				DAFF035F22EC38C3004A54E1 /* OnBoardingPage.swift in Sources */,
 				DAC9553122EB6E0400EC2740 /* MemberRankViewCell.swift in Sources */,
 				DA2638A322EAB17A00237F31 /* PenaltyPickerView.swift in Sources */,
 				DADBAC09229933A100FD6A5A /* GoalsViewController.swift in Sources */,
@@ -714,6 +732,7 @@
 				DAC9552722EB59E900EC2740 /* GoalDetailViewController.swift in Sources */,
 				DA2638A922EAB3A900237F31 /* AddGoalButton.swift in Sources */,
 				DA26389F22EAB05900237F31 /* FrequencyPickerView.swift in Sources */,
+				DAFF038F22F1E56D004A54E1 /* OnBoardingViewCell.swift in Sources */,
 				DA3C93EC22E30C8500711267 /* FeedbackSettingsView.swift in Sources */,
 				DAC9554422EB922D00EC2740 /* LoginViewModel.swift in Sources */,
 				DADBAC192299378200FD6A5A /* Array.swift in Sources */,
@@ -727,6 +746,7 @@
 				DA26386C22E7390F00237F31 /* CategoryPickerView.swift in Sources */,
 				DA2638AF22EAE7EA00237F31 /* FrequencyButton.swift in Sources */,
 				DA26389722E8C43800237F31 /* AddGoalSecondStepViewController.swift in Sources */,
+				DAFF035D22EC30D1004A54E1 /* OnBoardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -58,7 +58,7 @@ class SplashViewController: UIViewController {
                 navigationController.isNavigationBarHidden = true
                 self?.makeRootViewController(viewController: navigationController)
             } else {
-                let viewController = LoginViewController()
+                let viewController = OnBoardingViewController()
                 self?.makeRootViewController(viewController: viewController)
             }
         }
@@ -66,7 +66,15 @@ class SplashViewController: UIViewController {
     
     private func makeRootViewController(viewController: UIViewController) {
         let applicationDelegate = (UIApplication.shared.delegate as? AppDelegate)
-        applicationDelegate?.window?.rootViewController = viewController
-        applicationDelegate?.window?.makeKeyAndVisible()
+        
+        guard let window = applicationDelegate?.window else { return }
+        window.rootViewController = viewController
+        window.makeKeyAndVisible()
+        
+        UIView.transition(with: window,
+                          duration: 0.3,
+                          options: .transitionCrossDissolve,
+                          animations: nil,
+                          completion: nil)
     }
 }
